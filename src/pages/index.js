@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
+import kebabCase from "lodash/kebabCase"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -30,6 +31,9 @@ const BlogIndex = ({ data, location }) => {
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
+          const tagsList = post.frontmatter.tags.map((tag) =>
+            <Link className="tag" to={`/tags/${kebabCase(tag)}`}>{tag}</Link>
+          );
 
           return (
             <li key={post.fields.slug}>
@@ -44,7 +48,10 @@ const BlogIndex = ({ data, location }) => {
                       <span itemProp="headline">{title}</span>
                     </Link>
                   </h2>
-                  <small>{post.frontmatter.date}</small>
+                  <small>
+                    {post.frontmatter.date}<br/>
+                    Tags: {tagsList}
+                  </small>
                 </header>
                 <section>
                   <p
@@ -82,6 +89,7 @@ export const pageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
+          tags
         }
       }
     }

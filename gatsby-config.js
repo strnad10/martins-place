@@ -1,14 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Martin' place`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Martin Strnad`,
+      summary: `who lives in the Czech Republic. He's an overgrown child who's interested in productivity, time management and life improvements. Microsoft 365 is his thing. He's also a football player and fan. If you want to get in touch, contact him on `,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `Martin's place to rant. He lives in the Czech Republic. He's an overgrown child who's interested in productivity, time management and life improvements. Microsoft 365 is his thing. He's also a football player and fan.`,
+    siteUrl: `https://martin-strnad.cz/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `strnad10`,
+      linkedin: `strnad10`,
     },
   },
   plugins: [

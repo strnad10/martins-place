@@ -50,7 +50,10 @@ const BlogIndex = ({ data, location }) => {
                   </h2>
                   <small>
                     {post.frontmatter.date}<br/>
-                    Tags: {tagsList}
+                    <div className="tagPanel">
+                      <div className="tagLabel">Tags: </div>
+                      <div className="tags">{tagsList}</div>
+                    </div>
                   </small>
                 </header>
                 <section>

@@ -319,15 +319,33 @@ a:focus {
   margin-bottom: var(--spacing-8);
 }
 
-/* Tag */
+/* Tags */
 
 .tag {
   text-decoration: none;
   padding: 0 .5rem;
-  margin-left: 10px;
+  margin-left: var(--spacing-3);
   color: white;
   background: #005b99;
   border-radius: 6px;
+}
+
+.tagPanel {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  margin-bottom: var(--spacing-8);
+}
+
+.tagLabel {
+  margin-right: var(--spacing-2);
+}
+
+.tags {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  flex-wrap: wrap;
 }
 
 /* Notification form */
@@ -335,8 +353,8 @@ a:focus {
 .notificationForm {
   border: 1px solid var(--color-accent);
   border-radius: 6px;
-  margin-top: 10px;
-  margin-bottom: 50px;
+  margin-top: var(--spacing-3);
+  margin-bottom: var(--spacing-12);
   padding: 20px;
 }
 
@@ -346,7 +364,7 @@ a:focus {
 
 .formContainerPart {
   flex: 50%;
-  margin-bottom: 10px;
+  margin-bottom: var(--spacing-3);
 }
 
 .formContainer {
@@ -366,7 +384,7 @@ a:focus {
   border: none;
   outline: none;
   border-bottom:  2px solid #005b99;
-  margin-bottom: 0px;
+  margin-bottom: var(--spacing-0);
 }
 
 .formContainerPart input:focus::placeholder {
@@ -380,7 +398,7 @@ a:focus {
   padding: .1rem 1rem;
   color: black;
   background: #a8f0c6;
-  margin-bottom: 10px;
+  margin-bottom: var(--spacing-3);
 }
 
 #errorAlert {
@@ -388,7 +406,7 @@ a:focus {
   padding: .1rem 1rem;
   color: black;
   background: #f7a7a3;
-  margin-bottom: 10px;
+  margin-bottom: var(--spacing-3);
 }
 
 /* Subscribe button */

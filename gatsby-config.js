@@ -10,6 +10,7 @@ module.exports = {
     social: {
       twitter: `strnad10`,
       linkedin: `strnad10`,
+      github: `strnad10`,
     },
   },
   plugins: [
@@ -123,6 +124,13 @@ module.exports = {
         // theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+          endpoint: 'https://martin-strmad.us11.list-manage.com/subscribe/post?u=bdd6e6e84f2958112c1ca9944&amp;id=4723ac2a6d',
+          timeout: 3500
       },
     },
     `gatsby-plugin-react-helmet`,

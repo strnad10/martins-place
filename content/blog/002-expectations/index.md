@@ -28,5 +28,3 @@ Book review or my view on it is one type of posts you will find here. I'll share
 Outside of work, I do stuff from wood, metal, and other materials and most importantly, I like to restore and renew old things (like a bike from 1979 or my house). So, look forward to some of my work. 🙂
 
 Last, but not least, I'll share with you all the process of creating this blog. As you might have noticed, this blog is based on Gatsby framework and its default blog template. I already customized it a bit. I developed tags which I can assign to each post. I'll be improving my blog from time to time. Next thing I really want to add is some sort of table of content to get you around the post faster using Anchor links and custom React component. Bear in mind that I'm fairly new to programming in JavaScript so don't be harsh. 😁
-
-> **HINT:** Next post will be a Restoration one.

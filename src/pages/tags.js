@@ -4,7 +4,6 @@ import kebabCase from "lodash/kebabCase"
 
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -46,15 +45,12 @@ const TagsPage = ({ data, location }) => {
             itemType="http://schema.org/Article"
           >
             <header>
-              <h2>
-                <Link to="/">Back to all posts</Link>
-              </h2>
+              <Link to="/">← Back to all posts</Link>
             </header>
           </article>
         </li>
       </ol>
       <footer>
-        <Bio />
       </footer>
     </Layout>
   )

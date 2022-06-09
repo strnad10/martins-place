@@ -2,7 +2,6 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import PropTypes from "prop-types"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -59,14 +58,12 @@ const Tags = ({ pageContext, data, location }) => {
             itemType="http://schema.org/Article"
           >
             <header>
-              <h2>
-                <Link to="/tags">Back to all tags</Link>
-              </h2>
+              <Link to="/tags">← Back to all tags</Link><br/>
+              <Link to="/">← Back to all posts</Link>
             </header>
           </article>
         </li>
       </ol>
-      <Bio />
     </Layout>
   )  
 }

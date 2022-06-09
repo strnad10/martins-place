@@ -21,6 +21,7 @@ const Bio = () => {
           social {
             twitter
             linkedin
+            github
           }
         }
       }
@@ -38,14 +39,14 @@ const Bio = () => {
         layout="fixed"
         formats={["auto", "webp", "avif"]}
         src="../images/profile-pic.png"
-        width={50}
-        height={50}
+        width={100}
+        height={100}
         quality={95}
         alt="Profile picture"
       />
       {author?.name && (
         <p>
-          Written by <strong><a href={`https://twitter.com/${social?.twitter || ``}`}>{author.name}</a></strong> {author?.summary || null} <a href={`https://twitter.com/${social?.twitter || ``}`}>Twitter</a> or <a href={`https://linkedin.com/in/${social?.linkedin || ``}`}>LinkedIn</a>.
+          Written by <strong><a href={`https://twitter.com/${social?.twitter || ``}`}>{author.name}</a></strong> {author?.summary || null} <a href={`https://twitter.com/${social?.twitter || ``}`}>Twitter</a> or <a href={`https://linkedin.com/in/${social?.linkedin || ``}`}>LinkedIn</a>. You can also find me on <a href={`https://github.com/${social?.github || ``}`}>GitHub</a> where I share development progress of this blog.
           {` `}
         </p>
       )}

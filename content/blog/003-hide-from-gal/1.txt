@@ -1,0 +1,16 @@
+Hide user Global Adress List without extending AD DS schema
+
+If msDS-CloudExtensionAttribute1 attribute is set to HIDE, hide user from Exchange Online Global Address List.
+
+ad.alefsec.com
+user
+person
+join
+50
+
+
+
+Expression
+msExchHideFromAddressLists
+IIF(IsPresent([msDS-cloudExtensionAttribute1]),IIF([msDS-cloudExtensionAttribute1]="HIDE",True,False),NULL)
+Update

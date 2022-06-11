@@ -45,6 +45,13 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
+          {
+            resolve: "gatsby-remark-embed-snippet",
+            options: {
+              classPrefix: "language-",
+              directory: `${__dirname}/content/blog/`,
+            },
+          },
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,

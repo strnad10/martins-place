@@ -5,7 +5,8 @@ description: "As I said in last post, todays post is all about what you can expe
 tags: ["Post"]
 ---
 
-> ## TL; DR
+## TL; DR
+
 > I'm an IT guy. I'll write about productivity, time management stuff, do some book reviews, post about restoration process on things I do in my free time and finally, I'll share development process of this website. This blog is here to keep me accountable.
 
 As I said in last post, todays post is all about what you can expect from me and this blog. I'll mention what the content of this blog would look like and how would I keep myself accountable.

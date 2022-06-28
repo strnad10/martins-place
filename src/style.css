@@ -419,6 +419,26 @@ a:focus {
   border-radius: 6px;
 }
 
+/* Code snippets */
+.gatsby-highlight-code-line {
+  background-color: #feb;
+  display: block;
+  margin-left: -1em;
+  margin-right: -1em;
+  padding-right: 1em;
+  padding-left: 0.75em;
+}
+
+.gatsby-highlight pre[class*="language-"].line-numbers {
+  padding-left: 2.8em;
+}
+
+.gatsby-highlight pre[class*="language-"].line-numbers {
+  padding: 0;
+  padding-left: 2.8em;
+  overflow: initial;
+}
+
 /* Media queries */
 
 @media (max-width: 42rem) {

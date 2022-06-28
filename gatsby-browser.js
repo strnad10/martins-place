@@ -8,3 +8,5 @@ import "./src/style.css"
 
 // Highlighting for code blocks
 import "prismjs/themes/prism.css"
+
+require("prismjs/plugins/line-numbers/prism-line-numbers.css")

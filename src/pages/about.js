@@ -5,6 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Badges from "../components/badges"
+import LinkToCV from "../components/linkToCV"
 
 const About = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -25,7 +26,7 @@ const About = ({ data, location }) => {
           alt="Profile picture"
         />
         <p>
-          My name is Martin Strnad. I'm from the Czech Republic and since I was a little child, I lived in a lovely village called Struhařov. 
+          My name is Martin Strnad. I'm from the Czech Republic and since I was a little child, I lived in a lovely village called Struhařov. After I graduated from <a href="https://www.sps-prosek.cz">Prosek High School</a> in Prague, I moved to Čeňovice, which is even smaller than Struhařov.
         </p>
         <p>
           Since September 2021, I work as a Systems Engineer at <a href="https://alef.com">ALEF NULA a.s.</a> in Prague. I mainly focus on the Security of Microsoft 365 environments. I also love the identity approach of Microsoft and Microsoft Endpoint Manager on which I'll try to focus the most. It took a lot of effort and energy to get here and it is worth it.
@@ -54,6 +55,9 @@ const About = ({ data, location }) => {
         </p>
         <p>
           Should you need to get in touch with me, you may use DM on <a href="https://twitter.com/strnad10">Twitter</a> or <a href="https://twitter.com/strnad10">LinkedIn</a>.
+        </p>
+        <p>
+          If you want to get even more information about my carrier path or my skills, download my CV <LinkToCV />.
         </p>
       </div>
     </Layout>

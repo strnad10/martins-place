@@ -26,7 +26,7 @@ const About = ({ data, location }) => {
           alt="Profile picture"
         />
         <p>
-          My name is Martin Strnad. I'm from the Czech Republic and since I was a little child, I lived in a lovely village called Struhařov. After I graduated from <a href="https://www.sps-prosek.cz">Prosek High School</a> in Prague, I moved to Čeňovice, which is even smaller than Struhařov.
+          My name is Martin Strnad. I'm from the Czech Republic and since I was a little child, I lived in a lovely village called Struhařov. After I graduated from <a href="https://www.sps-prosek.cz">Prosek High School</a> in Prague, I moved to Čeňovice, which is even smaller than Struhařov, but just as lovely.
         </p>
         <p>
           Since September 2021, I work as a Systems Engineer at <a href="https://alef.com">ALEF NULA a.s.</a> in Prague. I mainly focus on the Security of Microsoft 365 environments. I also love the identity approach of Microsoft and Microsoft Endpoint Manager on which I'll try to focus the most. It took a lot of effort and energy to get here and it is worth it.

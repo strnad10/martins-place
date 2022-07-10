@@ -250,10 +250,6 @@ a:focus {
   margin-bottom: var(--spacing-20);
 }
 
-.global-header {
-  margin-bottom: var(--spacing-12);
-}
-
 .main-heading {
   font-size: var(--fontSize-7);
   margin: 0;
@@ -317,6 +313,77 @@ a:focus {
 
 .gatsby-highlight {
   margin-bottom: var(--spacing-8);
+}
+
+/* About */
+
+.about {
+  display: block;
+  margin-bottom: var(--spacing-16);
+  text-align: justify;
+}
+
+.about-avatar {
+  margin-right: var(--spacing-8);
+  margin-bottom: var(--spacing-8);
+  min-width: 200px;
+  border-radius: 100%;
+  float: left;
+  width: 200px;
+  height: 200px;
+}
+
+#about-title {
+  margin-bottom: var(--spacing-8)
+}
+
+/* Navigation */
+
+.navigation a {
+  color: var(--color-text);
+  text-decoration: none;
+  display: block;
+}
+
+.navigation ul {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+  text-decoration: none;
+}
+
+.menuItem {
+  list-style-type: none;
+  padding: 1rem;
+}
+
+.menuItem img {
+  width: 30px;
+  height: 30px;
+}
+
+.menuItem a:hover img {
+  filter: invert(16%) sepia(93%) saturate(3150%) hue-rotate(186deg) brightness(95%) contrast(122%);
+}
+
+/* Badges */
+
+.avatar-badge {
+  min-width: 40px;
+  position: relative;
+  left: 60px;
+  top: -20px;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: var(--spacing-8);
+}
+
+.badge {
+  margin: var(--spacing-2);
 }
 
 /* Tags */
@@ -391,22 +458,39 @@ a:focus {
   color: #005b99;
 }
 
+/* Alerts */
+
+.alert {
+  padding: .1rem 1rem;
+  color: black;
+  margin-bottom: var(--spacing-3);
+  background: #ffd699;
+  border-bottom: 2px solid #ff9800;
+}
+
+.alert-closebtn {
+  margin-left: 15px;
+  float: right;
+  font-size: 22px;
+  line-height: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.alert-closebtn:hover {
+  font-weight: bold;
+}
+
 /* Notification form alerts */
 
 #successAlert {
-  border-bottom: 2px solid #1eae5a;
-  padding: .1rem 1rem;
-  color: black;
   background: #a8f0c6;
-  margin-bottom: var(--spacing-3);
+  border-bottom: 2px solid #1eae5a;
 }
 
 #errorAlert {
-  border-bottom: 2px solid #bc1810;
-  padding: .1rem 1rem;
-  color: black;
   background: #f7a7a3;
-  margin-bottom: var(--spacing-3);
+  border-bottom: 2px solid #bc1810;
 }
 
 /* Subscribe button */

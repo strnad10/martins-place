@@ -12,6 +12,38 @@ module.exports = {
       linkedin: `strnad10`,
       github: `strnad10`,
     },
+    menuLinks:[
+      {
+        name:'home',
+        link:'/',
+        icon:'/navigation/home.svg'
+      },
+      {
+      name:'tags',
+      link:'/tags',
+      icon:'/navigation/tags.svg'
+      },
+      {
+        name:'about',
+        link:'/about',
+        icon:'/navigation/about.svg'
+      },
+      {
+        name:'linkedin',
+        link:'https://linkedin.com/in/strnad10',
+        icon:'/navigation/linkedin.svg'
+      },
+      {
+        name:'twitter',
+        link:'https://twitter.com/strnad10',
+        icon:'/navigation/twitter.svg'
+      },
+      {
+        name:'github',
+        link:'https://github.com/strnad10',
+        icon:'/navigation/github.svg'
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-image`,

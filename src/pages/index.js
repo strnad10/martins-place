@@ -32,7 +32,7 @@ const BlogIndex = ({ data, location }) => {
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
           const tagsList = post.frontmatter.tags.map((tag) =>
-            <Link className="tag" to={`/tags/${kebabCase(tag)}`}>{tag}</Link>
+            <Link className="tag" to={`/tags/${kebabCase(tag)}`} key={kebabCase(tag)}>{tag}</Link>
           );
 
           return (

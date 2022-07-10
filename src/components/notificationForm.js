@@ -56,11 +56,15 @@ export default class IndexPage extends React.Component {
         <form onSubmit={this._handleSubmit}>
           {this.state.success !== null &&
             this.state.success === true &&
-              <div className="alert" id="successAlert">{this.state.message}</div>
+              <div className="alert" id="successAlert">
+                <strong>Success:</strong> {this.state.message}
+              </div>
           }
           {this.state.success !== null &&
             this.state.success === false &&
-              <div className="alert" id="errorAlert">{this.state.message}</div>
+              <div className="alert" id="errorAlert">
+                <strong>Error:</strong> {this.state.message}
+              </div>
           }
           {
             this.state.nameInput !== true &&

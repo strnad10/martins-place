@@ -34,6 +34,18 @@ const Badges = () => {
           alt="Modern Desktop Administrator Associate"
         />
       </Link>
+      <Link to="https://www.credly.com/badges/fdf4bcde-fa76-430e-a214-a6733d5c204c/public_url">
+        <StaticImage
+          className="badge"
+          layout="fixed"
+          formats={["auto", "webp", "avif"]}
+          src="../images/badges/azure-security-engineer-associate.png"
+          width={100}
+          height={100}
+          quality={95}
+          alt="Modern Desktop Administrator Associate"
+        />
+      </Link>
     </div>
   )
 }

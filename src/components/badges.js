@@ -5,12 +5,23 @@
 
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import { Link } from "gatsby"
 
 const Badges = () => {
   return (
     <div className="badges">
-      <Link to="https://www.credly.com/badges/3b34d8ef-3ac9-4206-adcb-04acf55e955e/public_url">
+      <a href="https://www.credly.com/badges/a14c6c95-e13e-4d29-8bb3-f80e0f3ff5e8/public_url">
+        <StaticImage
+          className="badge"
+          layout="fixed"
+          formats={["auto", "webp", "avif"]}
+          src="../images/badges/microsoft-365-certified-enterprise-administrator-expert.png"
+          width={100}
+          height={100}
+          quality={95}
+          alt="Enterprise Administrator Expert"
+        />
+      </a>
+      <a href="https://www.credly.com/badges/3b34d8ef-3ac9-4206-adcb-04acf55e955e/public_url">
         <StaticImage
           className="badge"
           layout="fixed"
@@ -21,8 +32,8 @@ const Badges = () => {
           quality={95}
           alt="Security Administrator Associate"
         />
-      </Link>
-      <Link to="https://www.credly.com/badges/a0b744d1-3f02-49aa-82f7-8596316cd56a/public_url">
+      </a>
+      <a href="https://www.credly.com/badges/a0b744d1-3f02-49aa-82f7-8596316cd56a/public_url">
         <StaticImage
           className="badge"
           layout="fixed"
@@ -33,8 +44,8 @@ const Badges = () => {
           quality={95}
           alt="Modern Desktop Administrator Associate"
         />
-      </Link>
-      <Link to="https://www.credly.com/badges/fdf4bcde-fa76-430e-a214-a6733d5c204c/public_url">
+      </a>
+      <a href="https://www.credly.com/badges/fdf4bcde-fa76-430e-a214-a6733d5c204c/public_url">
         <StaticImage
           className="badge"
           layout="fixed"
@@ -45,7 +56,7 @@ const Badges = () => {
           quality={95}
           alt="Modern Desktop Administrator Associate"
         />
-      </Link>
+      </a>
     </div>
   )
 }

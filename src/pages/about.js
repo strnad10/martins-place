@@ -35,7 +35,7 @@ const About = ({ data, location }) => {
           The ALEF company has been operating on the market since 1994, and during that time it has built a position as a reliable partner and provider of modern IT solutions. The company's unique advantage is the comprehensiveness of its offer, from analysis, solution design, implementation, training, and certification to monitoring and professional services for small and medium-sized enterprises and international corporations. And I as a Microsoft 365 specialist do just that.
         </p>
         <p>
-          In ALEF, I got a chance to work on my education and certifications. I took two courses on Cyber Security Law of the Czech Republic. I also had time to go for a lot of Microsoft's certifications. Mainly, I went for MS-500, AZ-500, then MD-100 and MD-101 which is Intune and MECM (formerly SCCM) based, MS-100 which I got not too long ago, and right now, I'm in a process of getting MS-101 to finish my Expert certification. I also want to go for SC-300.
+          In ALEF, I got a chance to work on my education and certifications. I took two courses on Cyber Security Law of the Czech Republic. I also had time to go for a lot of Microsoft's certifications. Mainly, I went for MS-500, AZ-500 to get a credit for fundamentals in Microsoft 365 and Azure services. Then I did the MD-100 and MD-101 exams which are Intune and MECM (formerly SCCM) based exams to get the Modern Desktop Associate certification. Recenty, I got myselt to do MS-100 and MS-101 to finish my Enterprise Administrator Expert certification. I also want to go for SC-300.
         </p>
         <Badges />
         <p>

@@ -32,7 +32,7 @@ const BlogIndex = ({ data, location }) => {
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
           const tagsList = post.frontmatter.tags.map((tag) =>
-            <Link className="tag" to={`/tags/${kebabCase(tag)}`} key={kebabCase(tag)}>{tag}</Link>
+            <Link className="postTag" to={`/tags/${kebabCase(tag)}`} key={kebabCase(tag)}>{tag}</Link>
           );
 
           return (
@@ -50,9 +50,9 @@ const BlogIndex = ({ data, location }) => {
                   </h2>
                   <small>
                     {post.frontmatter.date}<br/>
-                    <div className="tagPanel">
-                      <div className="tagLabel">Tags: </div>
-                      <div className="tags">{tagsList}</div>
+                    <div className="postTagPanel">
+                      <div className="postTagLabel">Tags: </div>
+                      <div className="postTags">{tagsList}</div>
                     </div>
                   </small>
                 </header>

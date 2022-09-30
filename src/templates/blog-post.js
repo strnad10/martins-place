@@ -4,13 +4,15 @@ import kebabCase from "lodash/kebabCase"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import ShareButtons from "../components/shareButtons"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
+  const url = typeof window !== "undefined" ? window.location.href : "";
   const { previous, next } = data
   const tagsList = post.frontmatter.tags.map((tag) =>
-    <Link className="tag" to={`/tags/${kebabCase(tag)}`}>{tag}</Link>
+    <Link className="postTag" to={`/tags/${kebabCase(tag)}`}>{tag}</Link>
   );
 
   return (
@@ -26,10 +28,17 @@ const BlogPostTemplate = ({ data, location }) => {
       >
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
-          <div className="tagPanel">
-            <div className="tagLabel">Tags: </div>
-            <div className="tags">{tagsList}</div>
+          <div class="postMetaData">
+            <p class="postDate">{post.frontmatter.date}</p>
+            <ShareButtons 
+              url={url}
+              title={siteTitle}
+              description={post.frontmatter.description || post.excerpt}
+            />
+          </div>
+          <div className="postTagPanel">
+            <div className="postTagLabel">Tags: </div>
+            <div className="postTags">{tagsList}</div>
           </div>
         </header>
         <section

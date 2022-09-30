@@ -2,7 +2,7 @@
 title: How this website came to life // Part 1
 date: "2022-06-27T20:01:20.284Z"
 description: "As a person interested in technology, I did want to develop my blog by myself. I wasn’t keen on building it with a fancy web-based editor ..."
-tags: ["Post", "Blog", "Development"]
+tags: ["Post", "Blog", "Development", "GatsbyJS"]
 ---
 
 As an IT person interested in technology, I did want to develop my blog by myself. I wasn’t keen on building it with a fancy web-based editor without any real customization options. I was thinking about a WordPress blog, but then I remembered that we had a class at middle school and I haven't had a good time customizing it. Also, it is not ideal from a security standpoint.

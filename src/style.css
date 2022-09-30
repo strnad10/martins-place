@@ -11,7 +11,7 @@
   --maxWidth-3xl: 48rem;
   --maxWidth-4xl: 56rem;
   --maxWidth-full: "100%";
-  --maxWidth-wrapper: var(--maxWidth-2xl);
+  --maxWidth-wrapper: var(--maxWidth-4xl);
   --spacing-px: "1px";
   --spacing-0: 0;
   --spacing-1: 0.25rem;
@@ -388,7 +388,7 @@ a:focus {
 
 /* Tags */
 
-.tag {
+.postTag {
   text-decoration: none;
   padding: 0 .5rem;
   margin-left: var(--spacing-3);
@@ -397,22 +397,55 @@ a:focus {
   border-radius: 6px;
 }
 
-.tagPanel {
+.postTagPanel {
   display: flex;
   display: -webkit-flex;
   display: -ms-flexbox;
   margin-bottom: var(--spacing-8);
+  width: 100%;
 }
 
-.tagLabel {
+.postTagLabel {
   margin-right: var(--spacing-2);
 }
 
-.tags {
+.postTags {
   display: flex;
   display: -webkit-flex;
   display: -ms-flexbox;
   flex-wrap: wrap;
+}
+
+/* Post date and Share buttons */
+.postMetaData {
+  display: flex;
+}
+
+.postDate {
+  flex: 1;
+}
+
+.postShareLabel {
+  flex: 1;
+  text-align: right;
+}
+
+.postShare {
+  flex: 1;
+  display: flex;
+}
+
+.postShareButtons {
+  flex: 1;
+}
+
+.postShare button {
+  float: left;
+  margin-left: 15px;
+}
+
+.postShare button:hover {
+  filter: invert(16%) sepia(93%) saturate(3150%) hue-rotate(186deg) brightness(95%) contrast(122%);
 }
 
 /* Notification form */
@@ -510,7 +543,7 @@ a:focus {
   margin-left: -1em;
   margin-right: -1em;
   padding-right: 1em;
-  padding-left: 0.75em;
+  padding-left: 1em;
 }
 
 .gatsby-highlight pre[class*="language-"].line-numbers {

@@ -60,7 +60,6 @@ To get the value of __msDS-CloudExtensionAttribute1__ attribute to Exchange Onli
    - __Precedence:__ 50 (can be any number less than 100; if you created custom rules already, just endure that there are no duplicate numbers)
 
 ![Add new rule](ruleEdit.png)
-TODO: Retake the photo
 
 4) Leave __Scoping filter__ and __Join rules__ blank
 5) On Transformation page, click __Add transformation__ and fill the form

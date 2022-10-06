@@ -2,7 +2,7 @@
 title: "How does blocking legacy authentication work?"
 date: "2022-09-19T22:45:37.542Z"
 description: "I had a presentation last week about identity and one of my topics was conditional access. I was describing basic vs. modern authentication and how conditional access is evaluated during modern authentication."
-tags: [ "Microsoft", "CA", "AzureAD"]
+tags: [ "Post", "Microsoft", "CA", "AzureAD"]
 ---
 
 Howdy folks. I didn't have much time recently. Mainly because I was preparing my wedding. It was a wonderful day and we really enjoyed it. Since our wedding is over, I now have time to continue posting more blog posts. YAY! 😁
@@ -43,15 +43,15 @@ S: 221 Goodbye
 
 There is no room for additional details that Conditional access can use to evaluate conditions and apply controls. Simply, this is how the flow of legacy authentication works.
 
-![[01-legacy-auth.jpeg]]
+![Legacy Authentication](01-legacy-auth.jpeg)
 
 ## How does blocking work?
 Conditional Access policies are always applied after successful authentication, regardless of the protocol.
 
 Legacy protocols talk directly to corresponding service and the request is then proxied to Azure AD on behalf of the user. The client sends the authentication request to the service, with the credentials. The service validates the credentials with Azure Active Directory. After the service validates with Azure AD that the credentials are OK, then the only Conditional access policy that is compatible with the proxied request is to block the legacy authentication requests. If the policy is configured to block legacy protocols, the service receives a denied response from Azure AD and the user's login is not successful.
 
-![[02-block-legacy-auth.png]]
+![How does blocking legacy authentication work?](02-block-legacy-auth.png)
 
 I hope that you find this article somewhat useful. If you do, share it with your friends. If you want to talk to me, you can message me on [Twitter](https://twitter.com/strnad10) or [LinkedIn](https://www.linkedin.com/in/strnad10/). Thank you for reading and have a nice rest of your day. 😉
 
-PS: For those of you that are looking forward to see part 2 of Android dedicated device enrollment, I'll release it in October. Part 1 can be found [here](https://martin-strnad.cz/007-android-dedicated-devices/).
+PS: For those of you that are looking forward to see part 2 of Android dedicated device enrollment, I'll release it this month. Part 1 can be found [here](https://martin-strnad.cz/007-android-dedicated-devices/).

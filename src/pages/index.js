@@ -49,9 +49,9 @@ const BlogIndex = ({ data, location }) => {
                     </Link>
                   </h2>
                   <small>
-                    {post.frontmatter.date}<br/>
+                    📆 {post.frontmatter.date}<br/>
                     <div className="postTagPanel">
-                      <div className="postTagLabel">Tags: </div>
+                      <div className="postTagLabel">🏷️ Tags: </div>
                       <div className="postTags">{tagsList}</div>
                     </div>
                   </small>

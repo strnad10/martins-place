@@ -12,7 +12,7 @@ const ShareButtons = ({ url, title, description }) => (
 		<p class="postShareLabel">Share: </p>
     
     <div class="postShareButtons">
-      <TwitterShareButton url={url} title={description}>
+      <TwitterShareButton url={url} title={description} via={"strnad10"}>
         <StaticImage
           className="postShareIcon"
           layout="fixed"

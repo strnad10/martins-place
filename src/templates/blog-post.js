@@ -29,7 +29,7 @@ const BlogPostTemplate = ({ data, location }) => {
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <div class="postMetaData">
-            <p class="postDate">{post.frontmatter.date}</p>
+            <p class="postDate">📆 {post.frontmatter.date}</p>
             <ShareButtons 
               url={url}
               title={siteTitle}
@@ -37,7 +37,7 @@ const BlogPostTemplate = ({ data, location }) => {
             />
           </div>
           <div className="postTagPanel">
-            <div className="postTagLabel">Tags: </div>
+            <div className="postTagLabel">🏷️ Tags: </div>
             <div className="postTags">{tagsList}</div>
           </div>
         </header>

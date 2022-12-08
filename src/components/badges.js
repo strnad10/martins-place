@@ -45,6 +45,18 @@ const Badges = () => {
           alt="Modern Desktop Administrator Associate"
         />
       </a>
+      <a href="https://www.credly.com/badges/927eaa39-57b6-405b-90f7-1290533cc9d3/public_url">
+        <StaticImage
+          className="badge"
+          layout="fixed"
+          formats={["auto", "webp", "avif"]}
+          src="../images/badges/identity-and-access-administrator-associate.png"
+          width={100}
+          height={100}
+          quality={95}
+          alt="Identity and Access Administrator Associate"
+        />
+      </a>
       <a href="https://www.credly.com/badges/fdf4bcde-fa76-430e-a214-a6733d5c204c/public_url">
         <StaticImage
           className="badge"

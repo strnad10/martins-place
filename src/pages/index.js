@@ -8,6 +8,7 @@ import Seo from "../components/seo"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
+  const siteImage = data.site.siteMetadata?.image
   const posts = data.allMarkdownRemark.nodes
 
   if (posts.length === 0) {
@@ -26,7 +27,10 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title="All posts" />
+      <Seo
+        title="All posts"
+        ogimage={siteImage}
+      />
       <Bio />
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
@@ -49,10 +53,10 @@ const BlogIndex = ({ data, location }) => {
                     </Link>
                   </h2>
                   <small>
-                    📆 {post.frontmatter.date}<br/>
-                    <div className="postTagPanel">
-                      <div className="postTagLabel">🏷️ Tags: </div>
-                      <div className="postTags">{tagsList}</div>
+                    <div className="postInfo">
+                      📆 {post.frontmatter.date}<br/>
+                      📖 {post.frontmatter.time}<br/>
+                      🏷️ Tags: {tagsList}
                     </div>
                   </small>
                 </header>
@@ -80,6 +84,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        image
       }
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
@@ -92,6 +97,7 @@ export const pageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
+          time
           tags
         }
       }

@@ -3,10 +3,12 @@ module.exports = {
     title: `Martin' place`,
     author: {
       name: `Martin Strnad`,
-      summary: `who lives in the Czech Republic. He's an overgrown child who's interested in productivity, time management and life improvements. Microsoft 365 is his thing. He's also a football player and fan. If you want to get in touch, contact him on `,
+      summary: `who lives in the Czech Republic. He's an overgrown child who's interested in productivity, time management and life improvements. Microsoft 365 is his thing. If you want to get in touch, contact him on `,
     },
-    description: `Martin's place to rant. He lives in the Czech Republic. He's an overgrown child who's interested in productivity, time management and life improvements. Microsoft 365 is his thing. He's also a football player and fan.`,
-    siteUrl: `https://martin-strnad.cz/`,
+    description: `Martin's place to rant. He lives in the Czech Republic. He's an overgrown child who's interested in productivity, time management and life improvements. Microsoft 365 is his thing.`,
+    siteUrl: `https://martin-strnad.cz`,
+    image: `/default-image.png`,
+    keywords: `Microsoft, Microsoft 365, Azure AD, Microsoft Intune, Productivity, Self-development, Bicycles`,
     social: {
       twitter: `strnad10`,
       linkedin: `strnad10`,
@@ -14,34 +16,34 @@ module.exports = {
     },
     menuLinks:[
       {
-        name:'home',
-        link:'/',
-        icon:'/navigation/home.svg'
+        name:`home`,
+        link:`/`,
+        icon:`/navigation/home.svg`
       },
       {
-      name:'tags',
-      link:'/tags',
-      icon:'/navigation/tags.svg'
+      name:`tags`,
+      link:`/tags`,
+      icon:`/navigation/tags.svg`
       },
       {
-        name:'about',
-        link:'/about',
-        icon:'/navigation/about.svg'
+        name:`about`,
+        link:`/about`,
+        icon:`/navigation/about.svg`
       },
       {
-        name:'linkedin',
-        link:'https://linkedin.com/in/strnad10',
-        icon:'/navigation/linkedin.svg'
+        name:`linkedin`,
+        link:`https://linkedin.com/in/strnad10`,
+        icon:`/navigation/linkedin.svg`
       },
       {
-        name:'twitter',
-        link:'https://twitter.com/strnad10',
-        icon:'/navigation/twitter.svg'
+        name:`twitter`,
+        link:`https://twitter.com/strnad10`,
+        icon:`/navigation/twitter.svg`
       },
       {
-        name:'github',
-        link:'https://github.com/strnad10',
-        icon:'/navigation/github.svg'
+        name:`github`,
+        link:`https://github.com/strnad10`,
+        icon:`/navigation/github.svg`
       },
     ],
   },
@@ -166,9 +168,9 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-mailchimp',
+      resolve: `gatsby-plugin-mailchimp`,
       options: {
-          endpoint: 'https://martin-strmad.us11.list-manage.com/subscribe/post?u=bdd6e6e84f2958112c1ca9944&amp;id=4723ac2a6d',
+          endpoint: `https://martin-strmad.us11.list-manage.com/subscribe/post?u=bdd6e6e84f2958112c1ca9944&amp;id=4723ac2a6d`,
           timeout: 3500
       },
     },

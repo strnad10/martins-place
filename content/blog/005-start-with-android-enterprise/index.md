@@ -2,7 +2,9 @@
 title: "Start with Android Enterprise in Microsoft Intune"
 date: "2022-07-11T19:43:58.534Z"
 description: ""
+time: "4 min read"
 tags: ["Tutorial", "Intune", "AndroidEnterprise", "M365"]
+ogimage: "./managementModels.png"
 ---
 
 I have a potential customer that wants to manage Zebra tablets which they use as scanners in their warehouses. Nowadays, they manage them using the SOTI MobiControl mobile device management solution. Since they bought a lot of licenses for their employees, they want to start managing devices using Microsoft Intune and while doing that, they would also like to migrate their scanners from SOTI MobiControl. Right now, they don’t use Intune at all.

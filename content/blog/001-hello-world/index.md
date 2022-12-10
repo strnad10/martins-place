@@ -2,7 +2,9 @@
 title: Hello World
 date: "2022-05-23T09:31:03.284Z"
 description: "Good morning, afternoon, or evening to whenever and wherever you are. My name is Martin Strnad, I'm a junior security systems engineer and this is a Hello World type of post. I live in ..."
+time: "2 min read"
 tags: ["Post"]
+ogimage: "./sharing-is-caring.jpg"
 ---
 
 Good morning, afternoon, or evening to whenever and wherever you are. My name is Martin Strnad, I'm a junior security systems engineer and this is a Hello World type of post. I live in the Czech Republic, not far from our main city Prague in a small, lovely village.

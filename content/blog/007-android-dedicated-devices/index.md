@@ -2,7 +2,9 @@
 title: "Enroll Android dedicated devices / Part 1"
 date: "2022-08-06T11:02:45.762Z"
 description: ""
+time: "8 min read"
 tags: ["Tutorial", "Intune", "AndroidEnterprise", "M365"]
+ogimage: "./002-enrollmentCreateProfile.png"
 ---
 
 In the last Intune post, I showed you, how to [connect your Android Enterprise account to Microsoft Intune](https://martin-strnad.cz/005-start-with-android-enterprise/) so you can start managing your devices. If you missed that post, or your options to enroll Android devices are greyed out as those on the image below, go ahead and read it.

@@ -14,12 +14,14 @@ const BlogPostTemplate = ({ data, location }) => {
   const tagsList = post.frontmatter.tags.map((tag) =>
     <Link className="postTag" to={`/tags/${kebabCase(tag)}`}>{tag}</Link>
   );
+  const ogimage = post.frontmatter.ogimage.childImageSharp.gatsbyImageData.images.fallback.src
 
   return (
     <Layout location={location} title={siteTitle}>
       <Seo
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
+        ogimage={ogimage}
       />
       <article
         className="blog-post"
@@ -30,15 +32,16 @@ const BlogPostTemplate = ({ data, location }) => {
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <div class="postMetaData">
             <p class="postDate">📆 {post.frontmatter.date}</p>
+            <p class="postTime">📖 {post.frontmatter.time}</p>
+            <div className="postTagPanel">
+              <p className="postTagLabel">🏷️ Tags: </p>
+              <p className="postTags">{tagsList}</p>
+            </div>
             <ShareButtons 
               url={url}
               title={siteTitle}
               description={post.frontmatter.description || post.excerpt}
             />
-          </div>
-          <div className="postTagPanel">
-            <div className="postTagLabel">🏷️ Tags: </div>
-            <div className="postTags">{tagsList}</div>
           </div>
         </header>
         <section
@@ -98,7 +101,13 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        time
         tags
+        ogimage {
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {

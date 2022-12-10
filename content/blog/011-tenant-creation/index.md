@@ -2,7 +2,9 @@
 title: Tenant Creation for users setting in Azure AD
 date: "2022-11-23T16:22:45.128Z"
 description: "In november 2022, many folks from the Microsoft community pointed out that a new setting was added to Azure AD ..."
+time: "5 min read"
 tags: ["Post", "Azure AD", "Security"]
+ogimage: "./07-disabled-tenant-creation.png"
 ---
 
 In november 2022, many folks from the Microsoft community pointed out that a new setting was added to Azure AD: "**Tenant creation** - Users can create Azure AD tenants".

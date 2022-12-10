@@ -9,8 +9,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const ShareButtons = ({ url, title, description }) => (
 	<div className="postShare">
-		<p class="postShareLabel">Share: </p>
-    
+    <p>Share:</p>
     <div class="postShareButtons">
       <TwitterShareButton url={url} title={description} via={"strnad10"}>
         <StaticImage

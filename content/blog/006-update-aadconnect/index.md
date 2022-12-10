@@ -2,7 +2,9 @@
 title: "Upgrade to Azure Active Directory Connect V2"
 date: "2022-07-18T12:31:12.468Z"
 description: ""
+time: "9 min read"
 tags: ["Tutorial", "Hybrid", "Identity", "M365"]
+ogimage: "./03_version.png"
 ---
 
 Support of Microsoft SQL Server 2012 and its last Service pack 4 ended on July 12, 2022, and it will no longer receive security support. You can go ahead and buy up to 3 years of Extended Security updates, which will be supported until July 8, 2025.

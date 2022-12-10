@@ -2,7 +2,9 @@
 title: Temporarily re-enable Basic Authentication in Exchange Online
 date: "2022-11-25T11:15:35.453Z"
 description: "In 2021, Microsoft announced plans to disable all Basic Authentication and that they will start doing so at October 1, 2022.  Since then, they have begun turning it off for ..."
-tags: ["Post", "Azure AD", "Exchange Online", "Legacy", "Authentication"]
+time: "3 min read"
+tags: ["Post", "AzureAD", "ExchangeOnline", "Legacy", "Authentication"]
+ogimage: "./03-help-and-support.png"
 ---
 
 In 2021, Microsoft announced plans to disable all Basic Authentication and that they will start doing so on October 1, 2022.  Since then, they have begun turning the Legacy Authentication for tenants which they’ve determined are not using it. Without legacy authentication, many of companies using third-party email clients suddenly had a big problem. The POP3 or IMAP connections from their legacy email clients to Exchange Online were no longer responding.

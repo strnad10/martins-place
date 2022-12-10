@@ -2,7 +2,9 @@
 title: "How does blocking legacy authentication work?"
 date: "2022-09-19T22:45:37.542Z"
 description: "I had a presentation last week about identity and one of my topics was conditional access. I was describing basic vs. modern authentication and how conditional access is evaluated during modern authentication."
+time: "4 min read"
 tags: [ "Post", "Microsoft", "CA", "AzureAD"]
+ogimage: "./02-block-legacy-auth.png"
 ---
 
 Howdy folks. I didn't have much time recently. Mainly because I was preparing my wedding. It was a wonderful day and we really enjoyed it. Since our wedding is over, I now have time to continue posting more blog posts. YAY! 😁

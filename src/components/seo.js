@@ -10,14 +10,20 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-const Seo = ({ description, lang, meta, title }) => {
+const Seo = ({ description, lang, meta, title, ogimage }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
             title
+            author {
+              name
+            }
             description
+            siteUrl
+            image
+            keywords
             social {
               twitter
               linkedin
@@ -31,6 +37,10 @@ const Seo = ({ description, lang, meta, title }) => {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
+  const ogimageUrl = (ogimage !== undefined) ? `${site.siteMetadata?.siteUrl}${ogimage}` : site.siteMetadata?.siteUrl + site.siteMetadata.image
+  const author = site.siteMetadata.author.name
+  const keywords = site.siteMetadata?.keywords
+
 
   return (
     <Helmet
@@ -45,12 +55,28 @@ const Seo = ({ description, lang, meta, title }) => {
           content: metaDescription,
         },
         {
+          name: `author`,
+          content: author,
+        },
+        {
+          name: 'keywords',
+          content: keywords,
+        },
+        {
+          property: `image`,
+          content: ogimageUrl,
+        },
+        {
           property: `og:title`,
           content: title,
         },
         {
           property: `og:description`,
           content: metaDescription,
+        },
+        {
+          property: `og:image`,
+          content: ogimageUrl,
         },
         {
           property: `og:type`,
@@ -72,6 +98,10 @@ const Seo = ({ description, lang, meta, title }) => {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: `twitter:image`,
+          content: ogimageUrl,
+        },
       ].concat(meta)}
     />
   )
@@ -86,6 +116,8 @@ Seo.defaultProps = {
 Seo.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
+  ogimageUrl: PropTypes.string,
+  keywords: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
 }

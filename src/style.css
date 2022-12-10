@@ -2,6 +2,7 @@
 
 :root {
   --maxWidth-none: "none";
+  --maxWidth-xxs: 10rem;
   --maxWidth-xs: 20rem;
   --maxWidth-sm: 24rem;
   --maxWidth-md: 28rem;
@@ -10,7 +11,7 @@
   --maxWidth-2xl: 42rem;
   --maxWidth-3xl: 48rem;
   --maxWidth-4xl: 56rem;
-  --maxWidth-full: "100%";
+  --maxWidth-full: 100%;
   --maxWidth-wrapper: var(--maxWidth-4xl);
   --spacing-px: "1px";
   --spacing-0: 0;
@@ -401,8 +402,8 @@ a:focus {
   display: flex;
   display: -webkit-flex;
   display: -ms-flexbox;
-  margin-bottom: var(--spacing-8);
-  width: 100%;
+  margin-bottom: var(--spacing-2);
+  width: var(--maxWidth-full);
 }
 
 .postTagLabel {
@@ -419,15 +420,25 @@ a:focus {
 /* Post date and Share buttons */
 .postMetaData {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .postDate {
-  flex: 1;
+  width: var(--maxWidth-full);
+  margin-bottom: var(--spacing-2);
+}
+
+.postTime {
+  width: var(--maxWidth-full);
+  margin-bottom: var(--spacing-2);
+}
+
+.postInfo {
+  width: var(--maxWidth-full);
 }
 
 .postShareLabel {
   flex: 1;
-  text-align: right;
 }
 
 .postShare {

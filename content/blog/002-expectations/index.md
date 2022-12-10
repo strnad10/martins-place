@@ -2,7 +2,9 @@
 title: What you can expect
 date: "2022-05-30T22:01:20.284Z"
 description: "As I said in the last post, today's post is all about what you can expect from me and this blog. I'll mention what the content of this blog would look like and  ..."
+time: "4 min read"
 tags: ["Post"]
+ogimage: "expectations.jpg"
 ---
 
 ## TL; DR

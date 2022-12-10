@@ -2,7 +2,9 @@
 title: Conditional Access authentication strength
 date: "2022-12-06T15:13:04.428Z"
 description: ""
-tags: ["Post", "Azure AD", "Authentication", "CA"]
+time: "4 min read"
+tags: ["Post", "AzureAD", "Authentication", "CA"]
+ogimage: "./06-authentication-strength-definitions.png"
 ---
 
 > Still in preview, do not use in a production environment.

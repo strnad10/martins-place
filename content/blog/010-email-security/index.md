@@ -2,7 +2,9 @@
 title: Email Security in Microsoft 365
 date: "2022-11-02T16:22:45.128Z"
 description: "We use email communication on a daily basis. Since we use it daily to communicate with our customers, employees, and colleagues, we would think that the communication is secure and we can send anything we want ..."
+time: "14 min read"
 tags: ["Post", "M365", "Email", "Security"]
+ogimage: "./spf.png"
 ---
 
 We use email communication on a daily basis. Since we use it daily to communicate with our customers, employees, and colleagues, we would think that the communication is secure and we can send anything we want. Sadly, it is not the case most of the time. You might ask why is that. Well, to transfer an email communication from a sender's email server to a recipient's email server, the email is sent via SMTP (legacy) protocol. When the email is sent to the recipient's server, it is not encrypted and the mail itself does not contain any mechanism to verify the authenticity or integrity of the message. It does not even have any mechanism to verify the identity of the sender.

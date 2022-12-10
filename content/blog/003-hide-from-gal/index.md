@@ -2,7 +2,9 @@
 title: Hide user from the GAL in Microsoft 365 synchronized from Active Directory
 date: "2022-06-13T20:15:45.284Z"
 description: "This post will go over how to sync a custom attribute from on-premises Active Directory to Azure Active Directory to hide a user from the GAL, without the need ..."
-tags: ["Tutorial", "Active Directory", "Hybrid", "Exchange"]
+time: "6 min read"
+tags: ["Tutorial", "ActiveDirectory", "Hybrid", "Exchange"]
+ogimage: "./exchangeAdmin.png"
 ---
 
 ## TL;DR

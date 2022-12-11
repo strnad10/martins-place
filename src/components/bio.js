@@ -64,7 +64,7 @@ const Bio = () => {
         </div>
         {author?.name && (
           <p>
-            Written by <strong><a href={`https://twitter.com/${social?.twitter || ``}`}>{author.name}</a></strong> {author?.summary || null} <a href={`https://twitter.com/${social?.twitter || ``}`}>Twitter</a> or <a href={`https://linkedin.com/in/${social?.linkedin || ``}`}>LinkedIn</a>. You can also find me on <a href={`https://github.com/${social?.github || ``}`}>GitHub</a> where I share development progress of this blog.
+            Written by <strong><a href={`https://twitter.com/${social?.twitter || ``}`}>{author.name}</a></strong> {author?.summary || null} <a href={`https://twitter.com/${social?.twitter || ``}`}>Twitter</a> or <a href={`https://linkedin.com/in/${social?.linkedin || ``}`}>LinkedIn</a>. You can also find him on <a href={`https://github.com/${social?.github || ``}`}>GitHub</a> where he shares a development progress of this blog.
             {` `}
           </p>
         )}

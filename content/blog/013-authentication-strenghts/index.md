@@ -21,7 +21,7 @@ Now, let's talk about how this work. Authentication strength is based on the [A
 This policy defines which authentication methods are the most secure and determines 3 groups by their strength: **Multifactor authentication strength**, **Passwordless MFA strength**, and **Phishing-resistant MFA strength**. When granting access to the resource, you can require users to use methods from chosen Authentication strength group.
 
 | **Authentication method combination** | **MFA strength** | **Passwordless MFA strength** | **Phishing-resistant MFA strength** |
-|---|---|---|---|
+|---|:---:|:---:|:---:|
 | FIDO2 security key | ✅ | ✅ | ✅ |
 | Windows Hello for Business | ✅ | ✅ | ✅ |
 | Certificate-based authentication (Multi-Factor) | ✅ | ✅ | ✅ |

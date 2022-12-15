@@ -16,37 +16,42 @@ module.exports = {
       linkedin: `strnad10`,
       github: `strnad10`,
     },
-    menuLinks:[
+    menuLinks: [
       {
-        name:`home`,
-        link:`/`,
-        icon:`/navigation/home.svg`
+        name: `home`,
+        link: `/`,
+        icon: `/navigation/home.svg`
       },
       {
-      name:`tags`,
-      link:`/tags`,
-      icon:`/navigation/tags.svg`
+        name: `tags`,
+        link: `/tags`,
+        icon: `/navigation/tags.svg`
       },
       {
-        name:`about`,
-        link:`/about`,
-        icon:`/navigation/about.svg`
+        name: `about`,
+        link: `/about`,
+        icon: `/navigation/about.svg`
       },
       {
-        name:`linkedin`,
-        link:`https://linkedin.com/in/strnad10`,
-        icon:`/navigation/linkedin.svg`
+        name: `linkedin`,
+        link: `https://linkedin.com/in/strnad10`,
+        icon: `/navigation/linkedin.svg`
       },
       {
-        name:`twitter`,
-        link:`https://twitter.com/strnad10`,
-        icon:`/navigation/twitter.svg`
+        name: `twitter`,
+        link: `https://twitter.com/strnad10`,
+        icon: `/navigation/twitter.svg`
       },
       {
-        name:`github`,
-        link:`https://github.com/strnad10`,
-        icon:`/navigation/github.svg`
-      }, // TODO: Add RSS feed to navigation
+        name: `github`,
+        link: `https://github.com/strnad10`,
+        icon: `/navigation/github.svg`
+      },
+      {
+        name: `rss`,
+        link: `/rss.xml`,
+        icon: `/navigation/feed.svg`
+      },
     ],
   },
   plugins: [
@@ -162,15 +167,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-mailchimp`,
       options: {
-          endpoint: `https://martin-strmad.us11.list-manage.com/subscribe/post?u=bdd6e6e84f2958112c1ca9944&amp;id=4723ac2a6d`,
-          timeout: 3500
+        endpoint: `https://martin-strmad.us11.list-manage.com/subscribe/post?u=bdd6e6e84f2958112c1ca9944&amp;id=4723ac2a6d`,
+        timeout: 3500
       },
     },
     `gatsby-plugin-react-helmet`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-    
+
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
@@ -203,6 +208,22 @@ module.exports = {
           })
         },
         serialize: ({ path }) => {
+          if (path === `/` || path === `/about/`) {
+            return {
+              url: path,
+              changefreq: `daily`,
+              priority: 1,
+            }
+          }
+
+          if (path.includes(`/tag`)) {
+            return {
+              url: path,
+              changefreq: `daily`,
+              priority: 0.5,
+            }
+          }
+
           return {
             url: path,
             changefreq: `daily`,
@@ -211,5 +232,6 @@ module.exports = {
         },
       },
     },
+    `gatsby-plugin-robots-txt`,
   ],
 }

@@ -1,3 +1,5 @@
+const siteUrl = process.env.URL || `https://martin-strnad.cz`
+
 module.exports = {
   siteMetadata: {
     title: `Martin' place`,
@@ -44,7 +46,7 @@ module.exports = {
         name:`github`,
         link:`https://github.com/strnad10`,
         icon:`/navigation/github.svg`
-      },
+      }, // TODO: Add RSS feed to navigation
     ],
   },
   plugins: [
@@ -94,12 +96,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    // {
-    //   resolve: `gatsby-plugin-google-analytics`,
-    //   options: {
-    //     trackingId: `ADD YOUR TRACKING ID HERE`,
-    //   },
-    // },
     {
       resolve: `gatsby-plugin-feed`,
       options: {
@@ -130,9 +126,7 @@ module.exports = {
             },
             query: `
               {
-                allMarkdownRemark(
-                  sort: { order: DESC, fields: [frontmatter___date] },
-                ) {
+                allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
                   nodes {
                     excerpt
                     html
@@ -148,7 +142,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "Gatsby Starter Blog RSS Feed",
+            title: "Martin' place - RSS Feed",
           },
         ],
       },
@@ -176,6 +170,46 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-    `gatsby-plugin-sitemap`,
+    
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          `G-YKR3508XKN`,
+        ],
+        pluginConfig: {
+          head: true,
+        },
+      },
+    },
+    { // TODO: add modified to siteMap using frontmatter information (modified or date if (modified === null)) 
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        query: `
+        {
+          allSitePage {
+            nodes {
+              path
+            }
+          }
+        }
+      `,
+        resolveSiteUrl: () => siteUrl,
+        resolvePages: ({
+          allSitePage: { nodes: allPages },
+        }) => {
+          return allPages.map(page => {
+            return { ...page }
+          })
+        },
+        serialize: ({ path }) => {
+          return {
+            url: path,
+            changefreq: `daily`,
+            priority: 0.7,
+          }
+        },
+      },
+    },
   ],
 }

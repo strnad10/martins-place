@@ -49,7 +49,7 @@ export default class IndexPage extends React.Component {
   render() {
     return (
       <div className="notificationForm">
-        <h5>Subscribe</h5>
+        <p id="subscribe">Subscribe</p>
         <p>
           Do you want to get notified when a new post is released? Register bellow.<br/>
         </p>

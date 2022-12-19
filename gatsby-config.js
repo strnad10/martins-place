@@ -102,7 +102,7 @@ module.exports = {
               offsetY: `100`,
               removeAccents: true,
             },
-          }, // TODO: Try to fine tune this plugin
+          },
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,

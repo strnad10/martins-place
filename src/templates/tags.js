@@ -8,7 +8,7 @@ import Seo from "../components/seo"
 const Tags = ({ pageContext, data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { tag } = pageContext
-  const { edges, totalCount } = data.allMarkdownRemark
+  const { edges, totalCount } = data.allMdx
   const tagHeader = `${totalCount} post${
     totalCount === 1 ? "" : "s"
   } tagged with "${tag}"`
@@ -73,7 +73,7 @@ Tags.propTypes = {
     tag: PropTypes.string.isRequired,
   }),
   data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
+    allMdx: PropTypes.shape({
       totalCount: PropTypes.number.isRequired,
       edges: PropTypes.arrayOf(
         PropTypes.shape({
@@ -100,7 +100,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(
+    allMdx(
       limit: 2000
       sort: {frontmatter: {date: DESC}}
       filter: {frontmatter: {tags: {in: [$tag]}}}

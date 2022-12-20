@@ -136,7 +136,10 @@ module.exports = {
                   date: node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + node.fields.slug,
                   guid: site.siteMetadata.siteUrl + node.fields.slug,
-                  custom_elements: [{ "content:encoded": node.html }],
+                  custom_elements: [{ "content:encoded": node.body }],
+                  //TODO: Look for an alternative to allMarkdownRemark html field
+                  // to properly generate RSS feed. Sadly they removed the html
+                  // field in the V3 version and did not add it back in V4 version.
                 })
               })
             },
@@ -145,7 +148,7 @@ module.exports = {
                 allMdx(sort: {frontmatter: {date: DESC}}) {
                   nodes {
                     excerpt
-                    html
+                    body
                     fields {
                       slug
                     }

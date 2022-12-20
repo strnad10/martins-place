@@ -7,6 +7,8 @@ tags: ["Post", "Azure AD", "Security"]
 ogimage: "./07-disabled-tenant-creation.png"
 ---
 
+## New user setting that caused havoc
+
 In november 2022, many folks from the Microsoft community pointed out that a new setting was added to Azure AD: "**Tenant creation** - Users can create Azure AD tenants".
 
 ![LinkedIn](./01-linkedin.png)

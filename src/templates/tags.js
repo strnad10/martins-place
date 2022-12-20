@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import PropTypes from "prop-types"
+import kebabCase from "lodash/kebabCase"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -21,6 +22,9 @@ const Tags = ({ pageContext, data, location }) => {
         {edges.map(({ node }) => {
           const slug = node.fields.slug
           const title = node.frontmatter.title
+          const tagsList = node.frontmatter.tags.map((tag) =>
+            <Link className="postTag" to={`/tags/${kebabCase(tag)}`} key={kebabCase(tag)}>{tag}</Link>
+          );
 
           return (
             <li key={slug}>
@@ -36,7 +40,11 @@ const Tags = ({ pageContext, data, location }) => {
                     </Link>
                   </h2>
                   <small>
-                    {node.frontmatter.date}<br />
+                    <div className="postInfo">
+                    <div className="postInfoDate">📆 {node.frontmatter.date}</div>
+                      <div className="postInfoTime">📖 {node.frontmatter.time}</div>
+                      <div className="postInfoTags">🏷️ Tags: {tagsList}</div>
+                    </div>
                   </small>
                 </header>
                 <section>
@@ -116,6 +124,8 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            time
+            tags
           }
         }
       }

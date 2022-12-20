@@ -24,4 +24,4 @@ And that’s what the goal of this blog is. Not only to teach people something b
 
 To keep me accountable, I’ll set a post frequency in a later post, that I’ll try to keep going with. In that post, I’ll also state what you can expect from posts on this site and what to look forward to. 
 
-Until then, you have a wonderful day.
+Until then, you have a wonderful day. 😁

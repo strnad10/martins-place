@@ -5,6 +5,7 @@ import kebabCase from "lodash/kebabCase"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import ShareButtons from "../components/shareButtons"
+import { Toc } from "../components/toc"
 
 const BlogPostTemplate = ({ data, location, children }) => {
   const post = data.mdx
@@ -15,6 +16,7 @@ const BlogPostTemplate = ({ data, location, children }) => {
     <Link className="postTag" to={`/tags/${kebabCase(tag)}`} key={tag}>{tag}</Link>
   );
   const ogimage = post.frontmatter.ogimage.childImageSharp.gatsbyImageData.images.fallback.src
+  const toc = post.tableOfContents !== undefined ? post.tableOfContents : null
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -44,6 +46,7 @@ const BlogPostTemplate = ({ data, location, children }) => {
             />
           </div>
         </header>
+        <Toc tableOfContents={toc} />
         <section itemProp="articleBody">{children}</section>
         <hr />
         <nav className="blog-post-nav">
@@ -105,6 +108,7 @@ export const pageQuery = graphql`
           }
         }
       }
+      tableOfContents
     }
     previous: mdx(id: { eq: $previousPostId }) {
       fields {

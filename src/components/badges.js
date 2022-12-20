@@ -21,6 +21,18 @@ const Badges = () => {
           alt="Enterprise Administrator Expert"
         />
       </a>
+      <a href="#">
+        <StaticImage
+          className="badge"
+          layout="fixed"
+          formats={["auto", "webp", "avif"]}
+          src="../images/badges/microsoft-cybersecurity-architect-expert.png"
+          width={100}
+          height={100}
+          quality={95}
+          alt="Cybersecurity Architect Expert"
+        />
+      </a>
       <a href="https://www.credly.com/badges/3b34d8ef-3ac9-4206-adcb-04acf55e955e/public_url">
         <StaticImage
           className="badge"

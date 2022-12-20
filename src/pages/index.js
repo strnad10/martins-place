@@ -54,9 +54,9 @@ const BlogIndex = ({ data, location }) => {
                   </h2>
                   <small>
                     <div className="postInfo">
-                      📆 {post.frontmatter.date}<br/>
-                      📖 {post.frontmatter.time}<br/>
-                      🏷️ Tags: {tagsList}
+                      <div className="postInfoDate">📆 {post.frontmatter.date}</div>
+                      <div className="postInfoTime">📖 {post.frontmatter.time}</div>
+                      <div className="postInfoTags">🏷️ Tags: {tagsList}</div>
                     </div>
                   </small>
                 </header>

@@ -7,6 +7,8 @@ tags: ["Post", "AzureAD", "ExchangeOnline", "Legacy", "Authentication"]
 ogimage: "./03-help-and-support.png"
 ---
 
+## Surprise
+
 In 2021, Microsoft announced plans to disable all Basic Authentication and that they will start doing so on October 1, 2022.  Since then, they have begun turning the Legacy Authentication for tenants which they’ve determined are not using it. Without legacy authentication, many of companies using third-party email clients suddenly had a big problem. The POP3 or IMAP connections from their legacy email clients to Exchange Online were no longer responding.
 
 They probably are not used to monitoring the message center and were unaware of this change. I'd say that Microsoft's determination of tenants not using Legacy authentication was not 100% perfect because some of our customers got it disabled even though they were using legacy authentication at that time.
@@ -46,6 +48,8 @@ Diag: Enable Basic Auth in EXO
 > In the case of a third-party email client, you would probably want to enable POP and IMAP protocols. For mobile devices using legacy authentication, you might also want to enable Exchange ActiveSync.
 
 7) **Check the box** that you acknowledge, that doing so will change the tenant-wide configuration. Then click **Update**.
+
+## Result
 
 Again, after a while, your setting will change and you should be able to use said protocols within the next hour.
 

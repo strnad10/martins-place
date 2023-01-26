@@ -7,6 +7,8 @@ tags: ["Tutorial", "Intune", "AndroidEnterprise", "M365"]
 ogimage: "./managementModels.png"
 ---
 
+## Introduction 
+
 I have a potential customer that wants to manage Zebra tablets which they use as scanners in their warehouses. Nowadays, they manage them using the SOTI MobiControl mobile device management solution. Since they bought a lot of licenses for their employees, they want to start managing devices using Microsoft Intune and while doing that, they would also like to migrate their scanners from SOTI MobiControl. Right now, they don’t use Intune at all.
 
 I don’t have a license for SOTI MobiControl and I could not be bothered to install a demo and play with that. And actually, I don’t really need to since I have to factory reset all of your devices while enrolling them as Corporate-owned Single-use (Dedicated) Android devices anyway. Using Android Enterprise, you can use four management models shown in the image below. I’ll talk about every model in the future.

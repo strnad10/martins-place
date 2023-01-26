@@ -9,7 +9,7 @@ import Seo from "../components/seo"
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const siteImage = data.site.siteMetadata?.image
-  const posts = data.allMarkdownRemark.nodes
+  const posts = data.allMdx.nodes
 
   if (posts.length === 0) {
     return (
@@ -54,9 +54,9 @@ const BlogIndex = ({ data, location }) => {
                   </h2>
                   <small>
                     <div className="postInfo">
-                      📆 {post.frontmatter.date}<br/>
-                      📖 {post.frontmatter.time}<br/>
-                      🏷️ Tags: {tagsList}
+                      <div className="postInfoDate">📆 {post.frontmatter.date}</div>
+                      <div className="postInfoTime">📖 {post.frontmatter.time}</div>
+                      <div className="postInfoTags">🏷️ Tags: {tagsList}</div>
                     </div>
                   </small>
                 </header>
@@ -87,7 +87,7 @@ export const pageQuery = graphql`
         image
       }
     }
-    allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
+    allMdx(sort: {frontmatter: {date: DESC}}) {
       nodes {
         excerpt
         fields {

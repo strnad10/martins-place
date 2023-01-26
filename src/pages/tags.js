@@ -9,7 +9,7 @@ import Seo from "../components/seo"
 
 const TagsPage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
-  const group = data.allMarkdownRemark.group
+  const group = data.allMdx.group
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -58,7 +58,7 @@ const TagsPage = ({ data, location }) => {
 
 TagsPage.propTypes = {
   data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
+    allMdx: PropTypes.shape({
       group: PropTypes.arrayOf(
         PropTypes.shape({
           fieldValue: PropTypes.string.isRequired,
@@ -83,7 +83,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(limit: 2000) {
+    allMdx(limit: 2000) {
       group(field: {frontmatter: {tags: SELECT}}) {
         fieldValue
         totalCount

@@ -7,6 +7,8 @@ tags: ["Post", "Blog", "Development", "GatsbyJS"]
 ogimage: "./01-share-buttons.png"
 ---
 
+## New addition to my website
+
 Hello, my readers, I hope you're doing well. I wanted to let you know that I added a share button to all blog posts for you to conviniently and quickly share these posts. And what is a  better way to tell you about it than to share the process of implementing those buttons with you all?
 
 ## Prerequisites

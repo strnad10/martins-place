@@ -29,13 +29,13 @@ const About = ({ data, location }) => {
           My name is Martin Strnad. I'm from the Czech Republic and since I was a little child, I lived in a lovely village called Struhařov. After I graduated from <a href="https://www.sps-prosek.cz">Prosek High School</a> in Prague, I moved to Čeňovice, which is even smaller than Struhařov, but just as lovely.
         </p>
         <p>
-          Since September 2021, I work as a Systems Engineer at <a href="https://alef.com">ALEF NULA a.s.</a> in Prague. I mainly focus on the Security of Microsoft 365 environments. I also love the identity approach of Microsoft and Microsoft Endpoint Manager on which I'll try to focus the most. It took a lot of effort and energy to get here and it is worth it.
+          Since September 2021, I work as a Systems Engineer at <a href="https://alef.com">ALEF NULA a.s.</a> in Prague. I mainly focus on the Security of Microsoft 365 environments. I also love the identity approach of Microsoft and Microsoft Endpoint Manager on which I'll try to focus the most.
         </p>
         <p>
           The ALEF company has been operating on the market since 1994, and during that time it has built a position as a reliable partner and provider of modern IT solutions. The company's unique advantage is the comprehensiveness of its offer, from analysis, solution design, implementation, training, and certification to monitoring and professional services for small and medium-sized enterprises and international corporations. And I as a Microsoft 365 specialist do just that.
         </p>
         <p>
-          In ALEF, I got a chance to work on my education and certifications. I took two courses on Cyber Security Law of the Czech Republic. I also had time to go for a lot of Microsoft's certifications. Mainly, I went for MS-500, AZ-500 to get a credit for fundamentals in Microsoft 365 and Azure services. Then I did the MD-100 and MD-101 exams which are Intune and MECM (formerly SCCM) based exams to get the Modern Desktop Associate certification. Recenty, I got myselt to do MS-100 and MS-101 to finish my Enterprise Administrator Expert certification. In the fall of 2022, I also got my hands on SC-300. You can see all of my certification badges below.
+          In ALEF, I got a chance to work on my education and certifications. I took two courses on Cyber Security Law of the Czech Republic. I also had time to go for a lot of Microsoft's certifications. Mainly, I went for MS-500, AZ-500 to get a credit for fundamentals in Microsoft 365 and Azure services. Then I did the MD-100 and MD-101 exams which are Intune and MECM (formerly SCCM) based exams to get the Modern Desktop Associate certification. I also went for MS-100 and MS-101 to finish my Enterprise Administrator Expert certification. In the fall of 2022, I also got my hands on SC-300 and more importantly on <b>SC-100</b> which gave me the <b>Cybersecurity Architect Expert</b> certification. You can see all of my certification badges below.
         </p>
         <Badges />
         <p>

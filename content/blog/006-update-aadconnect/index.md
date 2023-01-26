@@ -7,6 +7,8 @@ tags: ["Tutorial", "Hybrid", "Identity", "M365"]
 ogimage: "./03_version.png"
 ---
 
+## SQL Server 2012 deprecation
+
 Support of Microsoft SQL Server 2012 and its last Service pack 4 ended on July 12, 2022, and it will no longer receive security support. You can go ahead and buy up to 3 years of Extended Security updates, which will be supported until July 8, 2025.
 
 With that said, on August 31, 2022, all 1.x versions of Azure AD Connect will be retired because they include SQL Server 2012 components that are no longer supported. I’m a bit late to board the train, but here I am, writing about how to upgrade to version 2.x of Azure AD Connect. Your new Azure AD Connect v2 ships with a SQL Server 2019 LocalDB, which has several security-related bug fixes and promises enhanced stability and performance.

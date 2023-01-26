@@ -7,6 +7,8 @@ tags: [ "Post", "Microsoft", "CA", "AzureAD"]
 ogimage: "./02-block-legacy-auth.png"
 ---
 
+## Never thaught of it this way
+
 Howdy folks. I didn't have much time recently. Mainly because I was preparing my wedding. It was a wonderful day and we really enjoyed it. Since our wedding is over, I now have time to continue posting more blog posts. YAY! 😁
 
 I had a presentation last week about identity and one of my topics was conditional access. I was describing basic vs. modern authentication and how conditional access is evaluated during modern authentication. I also mentioned that no conditional access is evaluated during legacy authentication.

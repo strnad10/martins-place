@@ -8,6 +8,8 @@ ogimage: "./06-authentication-strength-definitions.png"
 modified: "2022-12-13T21:13:04.428Z"
 ---
 
+## New conditional access control
+
 > Still in preview, do not use in a production environment.
 
 On October 19, 2022, Microsoft announced new Conditional Access control, that allows administrators to specify which combination of authentication methods can be used to access a resource. This new control is called **Authentication strength**. The idea of requiring different authentication methods for differently sensitive apps or resources was around for some time. This control, for example, allows an administrator to allow any multifactor authentication (MFA) method to access most resources in your organization but requires strong, often phishing-resistant authentication methods when their users access a highly sensitive resource or business-critical application.
@@ -20,20 +22,25 @@ Now, let's talk about how this work. Authentication strength is based on the [A
 
 This policy defines which authentication methods are the most secure and determines 3 groups by their strength: **Multifactor authentication strength**, **Passwordless MFA strength**, and **Phishing-resistant MFA strength**. When granting access to the resource, you can require users to use methods from chosen Authentication strength group.
 
-| **Authentication method combination** | **MFA strength** | **Passwordless MFA strength** | **Phishing-resistant MFA strength** |
-|---|:---:|:---:|:---:|
-| FIDO2 security key | ✅ | ✅ | ✅ |
-| Windows Hello for Business | ✅ | ✅ | ✅ |
-| Certificate-based authentication (Multi-Factor) | ✅ | ✅ | ✅ |
-| Microsoft Authenticator (Phone Sign-in) | ✅ | ✅ |
-| Temporary Access Pass (One-time use AND Multi-use) | ✅ |
-| Password + something you have | ✅ |
-| Federated single-factor + something you have | ✅ |
-| Federated Multi-Factor | ✅ |
-| Certificate-based authentication (single-factor) | |
-| SMS sign-in | |
-| Password | |
-| Federated single-factor | |
+<table>
+<thead>
+    <tr><td>Authentication method combination</td><td>MFA strength</td><td>Passwordless MFA strength</td><td>Phishing-resistant MFA strength</td></tr>
+</thead>
+<tbody>
+    <tr><td>FIDO2 security key</td><td>✅</td><td>✅</td><td>✅</td></tr>
+    <tr><td>Windows Hello for Business</td><td>✅</td><td>✅</td><td>✅</td></tr>
+    <tr><td>Certificate-based authentication (Multi-Factor)</td><td>✅</td><td>✅</td><td>✅</td></tr>
+    <tr><td>Microsoft Authenticator (Phone Sign-in)</td><td>✅</td><td>✅</td></tr>
+    <tr><td>Temporary Access Pass (One-time use AND Multi-use)</td><td>✅</td></tr>
+    <tr><td>Password + something you have</td><td>✅</td></tr>
+    <tr><td>Federated single-factor + something you have</td><td>✅</td></tr>
+    <tr><td>Federated Multi-Factor</td><td>✅</td></tr>
+    <tr><td>Certificate-based authentication (single-factor)</td></tr>
+    <tr><td>SMS sign-in</td></tr>
+    <tr><td>Password</td></tr>
+    <tr><td>Federated single-factor</td></tr>
+</tbody>
+</table>
 
 ## Custom authentication strength groups
 

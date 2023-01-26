@@ -5,16 +5,18 @@ import kebabCase from "lodash/kebabCase"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import ShareButtons from "../components/shareButtons"
+import { Toc } from "../components/toc"
 
-const BlogPostTemplate = ({ data, location }) => {
-  const post = data.markdownRemark
+const BlogPostTemplate = ({ data, location, children }) => {
+  const post = data.mdx
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const url = typeof window !== "undefined" ? window.location.href : "";
   const { previous, next } = data
   const tagsList = post.frontmatter.tags.map((tag) =>
-    <Link className="postTag" to={`/tags/${kebabCase(tag)}`}>{tag}</Link>
+    <Link className="postTag" to={`/tags/${kebabCase(tag)}`} key={tag}>{tag}</Link>
   );
   const ogimage = post.frontmatter.ogimage.childImageSharp.gatsbyImageData.images.fallback.src
+  const toc = post.tableOfContents !== undefined ? post.tableOfContents : null
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -30,9 +32,9 @@ const BlogPostTemplate = ({ data, location }) => {
       >
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <div class="postMetaData">
-            <p class="postDate">📆 {post.frontmatter.date}</p>
-            <p class="postTime">📖 {post.frontmatter.time}</p>
+          <div className="postMetaData">
+            <p className="postDate">📆 {post.frontmatter.date}</p>
+            <p className="postTime">📖 {post.frontmatter.time}</p>
             <div className="postTagPanel">
               <p className="postTagLabel">🏷️ Tags: </p>
               <p className="postTags">{tagsList}</p>
@@ -44,10 +46,8 @@ const BlogPostTemplate = ({ data, location }) => {
             />
           </div>
         </header>
-        <section
-          dangerouslySetInnerHTML={{ __html: post.html }}
-          itemProp="articleBody"
-        />
+        <Toc tableOfContents={toc} />
+        <section itemProp="articleBody">{children}</section>
         <hr />
         <nav className="blog-post-nav">
           <ul
@@ -93,10 +93,9 @@ export const pageQuery = graphql`
         title
       }
     }
-    markdownRemark(id: { eq: $id }) {
+    mdx(id: { eq: $id }) {
       id
       excerpt(pruneLength: 160)
-      html
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
@@ -109,8 +108,9 @@ export const pageQuery = graphql`
           }
         }
       }
+      tableOfContents
     }
-    previous: markdownRemark(id: { eq: $previousPostId }) {
+    previous: mdx(id: { eq: $previousPostId }) {
       fields {
         slug
       }
@@ -118,7 +118,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    next: markdownRemark(id: { eq: $nextPostId }) {
+    next: mdx(id: { eq: $nextPostId }) {
       fields {
         slug
       }

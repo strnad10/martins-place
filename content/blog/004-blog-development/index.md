@@ -7,6 +7,8 @@ tags: ["Post", "Blog", "Development", "GatsbyJS"]
 ogimage: "./01-gatsby-starter.png"
 ---
 
+## Introduction
+
 As an IT person interested in technology, I did want to develop my blog by myself. I wasn’t keen on building it with a fancy web-based editor without any real customization options. I was thinking about a WordPress blog, but then I remembered that we had a class at middle school and I haven't had a good time customizing it. Also, it is not ideal from a security standpoint.
 
 ![Security vulnerabilities in late 2021](00-vulnerabilities.png)
@@ -29,7 +31,7 @@ It was super simple. Almost a bit simpler than I'd like it to be. I wanted peopl
 
 I wanted tags on the home page to be clickable links to a page with other posts with the same tag. I also wanted a page with all tags so people can see all the categories or tags. Conveniently, the Gatsby framework had a tutorial on how to do just that. And it was fairly simple.
 
-### 1) Add Metadata
+### Add Metadata
 
 The first thing I had to do is to add metadata to each index.md, which represents a post so I can work with tags, query them and so forth.
 
@@ -45,7 +47,7 @@ As an IT person interested in technology, I did ...
 
 As you can see, it is a simple array of strings where each of them represents one tag. This array can be pulled from metadata (or _frontmatter_) of each index.md. 
 
-### 2) Query Metadata
+### Query Metadata
 
 To use field data, query it using GraphQL. All fields in frontmatter are available to query and put into some form using a custom React component.
 
@@ -63,15 +65,15 @@ markdownRemark(id: { eq: $id }) {
 }
 ```
 
-### 3) Make a page to list tagged posts
+### Make a page to list tagged posts
 
-The next step is to create a /tags/{tag} template which will list all posts tagged with said tag. All this page does is that it takes a tag and displays the total count of posts tagged with said tag.
+The next step is to create a tags template in a './tags' directory which will list all posts tagged with said tag. All this page does is that it takes a tag and displays the total count of posts tagged with said tag.
 
 ![Tag page](04-posts-tagged.png)
 
 Since this page is around 100 rows long, I'm not going to post it here. You can always find the code on my [GitHub](https://github.com/strnad10/martins-place).
 
-### 4) Modify gatsby-node.js to render that page
+### Modify gatsby-node.js to render that page
 
 The main method that renders all pages is _createPages_. I had to extend that method with the following code.
 
@@ -92,7 +94,7 @@ if (tags.length > 0) {
 }
 ```
 
-### 5) Make a page that shows all tagged posts
+### Make a page that shows all tagged posts
 
 I also wanted to create a /tags page, that will list out all tags, followed by the number of posts with that tag. To do that, I had to create a completely new page _src/pages/tags.js_.
 

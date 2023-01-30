@@ -232,6 +232,12 @@ main img {
   padding-bottom: var(--spacing-6);
 }
 
+.gatsby-resp-image-figcaption {
+  text-align: center;
+  font-size: var(--fontSize-0);
+  font-style: italic;
+}
+
 /* Link */
 
 a {
@@ -597,6 +603,11 @@ a:focus {
 #errorAlert {
   background: #f7a7a3;
   border-bottom: 2px solid #bc1810;
+}
+
+/* Twitter */
+.twitter-tweet {
+  margin: 0 auto;
 }
 
 /* Subscribe button */

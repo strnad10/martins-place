@@ -3,7 +3,7 @@ title: "Adding share buttons to my blog"
 date: "2022-09-30T15:09:45.325Z"
 description: ""
 time: "5 min read"
-tags: ["Post", "Blog", "Development", "GatsbyJS"]
+tags: ["Tutorial", "Blog", "Development", "GatsbyJS"]
 ogimage: "./01-share-buttons.png"
 ---
 

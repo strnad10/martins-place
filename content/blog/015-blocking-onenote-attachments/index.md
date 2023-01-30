@@ -1,6 +1,6 @@
 ---
 title: Block .one attachments NOW!
-date: "2023-01-27T12:02:32.065Z"
+date: "2023-01-30T11:04:32.065Z"
 description: ""
 time: "6 min read"
 tags: ["Tutorial", "AzureAD", "CA"]

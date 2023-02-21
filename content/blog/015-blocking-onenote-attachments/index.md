@@ -1,7 +1,7 @@
 ---
 title: Block .one attachments NOW!
 date: "2023-01-30T11:04:32.065Z"
-description: ""
+description: "Cybercriminals have started using OneNote attachments in phishing emails to infect victims with malware that can steal passwords, cryptocurrency wallets, and install more malware. This is a new tactic after previous methods, such as using macros in Word and ..."
 time: "6 min read"
 tags: ["Tutorial", "AzureAD", "CA"]
 ogimage: "./01-malicious-onenote.png"

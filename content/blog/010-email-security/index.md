@@ -4,7 +4,7 @@ date: "2022-11-02T16:22:45.128Z"
 description: "We use email communication on a daily basis. Since we use it daily to communicate with our customers, employees, and colleagues, we would think that the communication is secure and we can send anything we want ..."
 time: "14 min read"
 tags: ["Post", "M365", "Email", "Security"]
-ogimage: "./spf.png"
+ogimage: "./spf.jpg"
 ---
 
 ## Secure your email communication
@@ -49,7 +49,7 @@ The mechanism itself is not that complicated:
 6) The recipient's email server then compares the IP address of the sender's mail server with IP addresses in the SPF record. 
 7) If they match, SPF will succeed. If they don't match, SPF will fail. 
 
-![Sender Policy Framework scheme](./spf.png)
+![Sender Policy Framework scheme](./spf.jpg)
 
 To set the SPF record for your organization, you have to form the SPF record and publish it to your public DNS server. In most cases, when you use Exchange Online as an email service and you added a custom domain for your tenant, you have this set up correctly since Microsoft gives you an SPF record when adding the domain (see the picture below).
 

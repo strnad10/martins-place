@@ -4,7 +4,7 @@ date: "2022-06-27T20:01:20.284Z"
 description: "As a person interested in technology, I did want to develop my blog by myself. I wasn’t keen on building it with a fancy web-based editor ..."
 time: "6 min read"
 tags: ["Post", "Blog", "Development", "GatsbyJS"]
-ogimage: "./01-gatsby-starter.png"
+ogimage: "./01-gatsby-starter.jpg"
 ---
 
 ## Introduction

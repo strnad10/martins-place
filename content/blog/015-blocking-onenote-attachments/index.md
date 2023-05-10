@@ -4,7 +4,7 @@ date: "2023-01-30T11:04:32.065Z"
 description: "Cybercriminals have started using OneNote attachments in phishing emails to infect victims with malware that can steal passwords, cryptocurrency wallets, and install more malware. This is a new tactic after previous methods, such as using macros in Word and ..."
 time: "6 min read"
 tags: ["Tutorial", "AzureAD", "CA"]
-ogimage: "./01-malicious-onenote.png"
+ogimage: "./01-malicious-onenote.jpg"
 ---
 
 > **TL;DR:** New threat in form of OneNote files emerged as folks from Bleeping Computers informed in this post: [Hackers now use Microsoft OneNote attachments to spread malware](https://www.bleepingcomputer.com/news/security/hackers-now-use-microsoft-onenote-attachments-to-spread-malware). In this article, I give you a tutorial how to remediate this by a simple rule.
@@ -23,7 +23,7 @@ Let me give you a TL;DR version of their post. In December last year, [Trustwave
 
 ![Spam email example](./03-dhl-onenote-phishing.png "Spam email example - Source: Bleeping Computers")
 
-![OneNote file example](./01-malicious-onenote.png "OneNote file example - Source: Bleeping Computers")
+![OneNote file example](./01-malicious-onenote.jpg "OneNote file example - Source: Bleeping Computers")
 
 These OneNote files are built so that the content that should be interesting to the user is blurred out and in the middle is a button with a prompt to click on it. Behind the button are hidden .vbs scripts that will run after double-clicking on the button. Before running the script, Windows will give you a warning prompt but from the experience we know, that it will stop no curious user. 
 

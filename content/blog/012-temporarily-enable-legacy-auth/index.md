@@ -4,7 +4,7 @@ date: "2022-11-25T11:15:35.453Z"
 description: "In 2021, Microsoft announced plans to disable all Basic Authentication and that they will start doing so at October 1, 2022.  Since then, they have begun turning it off for ..."
 time: "3 min read"
 tags: ["Tutorial", "AzureAD", "ExchangeOnline", "Legacy", "Authentication"]
-ogimage: "./03-help-and-support.png"
+ogimage: "./03-help-and-support.jpg"
 ---
 
 ## Surprise
@@ -31,7 +31,7 @@ There is sadly only one way to re-enable legacy authentication and it is via a s
 
 2) Click on the **Help and Support** button in the bottom right of your screen.
 
-![Help & Support button](03-help-and-support.png)
+![Help & Support button](03-help-and-support.jpg)
 
 3) A panel will pop out on the right side of your screen. It will ask you to describe your problem. To start the process of re-enabling the legacy authentication, enter this string:
 ```

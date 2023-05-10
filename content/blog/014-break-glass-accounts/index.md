@@ -4,7 +4,7 @@ date: "2023-01-26T16:45:12.158Z"
 description: ""
 time: "7 min read"
 tags: ["Post", "AzureAD", "CA"]
-ogimage: "./01-break-glass.png"
+ogimage: "./01-break-glass.jpg"
 ---
 
 ## You want them, this is why
@@ -15,7 +15,7 @@ Think of them like an emergency button in a school or a bank. In case of an emer
 
 In some cases, they are also called Break-glass or Envelope accounts. It is essential to create two or more emergency access accounts in your environment. These emergency access accounts can be used in emergency situations when normal administrative accounts cannot be accessed, such as a security incident or conditional access outage. It's crucial to use these accounts only when necessary and not for regular usage. This way, you can limit the impact of accidental lack of administrative access.
 
-![In case of emergency break the glass](./01-break-glass.png)
+![In case of emergency break the glass](./01-break-glass.jpg)
 
 Let me show you, how to create such an account and give you a few examples, of how to make your Emergency access accounts safer. 
 

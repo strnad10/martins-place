@@ -4,7 +4,7 @@ date: "2022-11-23T16:22:45.128Z"
 description: "In november 2022, many folks from the Microsoft community pointed out that a new setting was added to Azure AD ..."
 time: "5 min read"
 tags: ["Post", "Azure AD", "Security"]
-ogimage: "./07-disabled-tenant-creation.png"
+ogimage: "./07-disabled-tenant-creation.jpg"
 ---
 
 ## New user setting that caused havoc
@@ -52,7 +52,7 @@ There are 3 ways to disable the creation of new tenants using corporate identiti
 3) Under Tenant creation, switch from Yes to **No**
 4) **Save** the setting
 
-![Disabled setting](07-disabled-tenant-creation.png)
+![Disabled setting](07-disabled-tenant-creation.jpg)
 
 ### PowerShell
 

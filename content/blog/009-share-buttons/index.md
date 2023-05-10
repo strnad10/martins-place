@@ -4,7 +4,7 @@ date: "2022-09-30T15:09:45.325Z"
 description: ""
 time: "5 min read"
 tags: ["Tutorial", "Blog", "Development", "GatsbyJS"]
-ogimage: "./01-share-buttons.png"
+ogimage: "./01-share-buttons.jpg"
 ---
 
 ## New addition to my website

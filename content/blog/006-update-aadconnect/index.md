@@ -4,7 +4,7 @@ date: "2022-07-18T12:31:12.468Z"
 description: ""
 time: "9 min read"
 tags: ["Tutorial", "Hybrid", "Identity", "M365"]
-ogimage: "./03_version.png"
+ogimage: "./03_version.jpg"
 ---
 
 ## SQL Server 2012 deprecation
@@ -34,7 +34,7 @@ The first thing we should do is verify that we have an old version of Azure AD C
 
 4)	In there, you should see the version of your Azure AD Connect.
 
-![Version of your Azure AD Connect](03_version.png)
+![Version of your Azure AD Connect](03_version.jpg)
 
 If it says 1.x, this blog post is for you. 😊
 

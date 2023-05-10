@@ -4,7 +4,7 @@ date: "2022-07-11T19:43:58.534Z"
 description: ""
 time: "4 min read"
 tags: ["Tutorial", "Intune", "AndroidEnterprise", "M365"]
-ogimage: "./managementModels.png"
+ogimage: "./managementModels.jpg"
 ---
 
 ## Introduction 
@@ -13,7 +13,7 @@ I have a potential customer that wants to manage Zebra tablets which they use as
 
 I don’t have a license for SOTI MobiControl and I could not be bothered to install a demo and play with that. And actually, I don’t really need to since I have to factory reset all of your devices while enrolling them as Corporate-owned Single-use (Dedicated) Android devices anyway. Using Android Enterprise, you can use four management models shown in the image below. I’ll talk about every model in the future.
 
-![Android Enterprise management models](managementModels.png)
+![Android Enterprise management models](managementModels.jpg)
 
 To manage devices using Microsoft Intune and every other MDM solution, you need to enroll devices into in. To do that in Microsoft Intune, you need to connect your Android Enterprise account to it. In the next posts, I’ll share with you an enrollment process using the COSU management model. Then I’ll show you, how to configure your devices and deploy apps and how to manage the experience using Managed Home Screen.
 

@@ -4,7 +4,7 @@ date: "2022-08-06T11:02:45.762Z"
 description: ""
 time: "8 min read"
 tags: ["Tutorial", "Intune", "AndroidEnterprise", "M365"]
-ogimage: "./002-enrollmentCreateProfile.png"
+ogimage: "./002-enrollmentCreateProfile.jpg"
 ---
 
 ## Introduction
@@ -37,7 +37,7 @@ For my policies in Microsoft Intune, I use ``MEM-ENROLL-Android-DedicatedDevices
 5) Select a **Token type**. For purposes of this video, I'm choosing **Corporate-owned dedicated devices (default)**.
 6) Choose a **Token expiration date**. You can choose up to 3 months, which is also a default duration. Your profile should look something like this.
 
-![Enrollment profile](002-enrollmentCreateProfile.png)
+![Enrollment profile](002-enrollmentCreateProfile.jpg)
 
 7) Click **Next**, review your configuration and click create.
 

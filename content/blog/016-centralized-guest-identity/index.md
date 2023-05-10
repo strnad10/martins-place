@@ -4,7 +4,7 @@ date: "2023-02-21T16:25:54.540Z"
 description: "Some of you may already know that there is something called SharePoint Online B2B guest. For those of you that don't, this post will give you an idea about the differences between SharePoint Online B2B guest users and Azure AD B2B guest users ..."
 time: "11 min read"
 tags: ["Tutorial", "AzureAD", "SharePoint", "Sharing"]
-ogimage: "./00-sharepoint-thumbnail.png"
+ogimage: "./00-sharepoint-thumbnail.jpg"
 ---
 
 ## The problem with sharing

@@ -81,16 +81,14 @@ To confirm that the password has been successfully updated in Azure Active Direc
 
 Windows LAPS keeps track of the expiration date of the last stored password on the local system. When the password reaches its expiration, Windows LAPS automatically rotates it. However, there may be cases where you need to rotate the password ahead of schedule, such as after a security breach or for ad-hoc testing purposes. In such situations, you can manually initiate a password rotation using the Reset-LapsPassword cmdlet. Here's an example of how to use it:
 
-``` Powershell
-
+```PowerShell
 Reset-LapsPassword
 Get-LapsAADPassword -DeviceIds myAzureDevice -IncludePasswords -AsPlainText
-
 ```
 
 And the output of it is:
 
-``` Output
+```
 DeviceName             : myAzureDevice
 DeviceId               : be8ab291-6307-42a2-8fda-2f4ee78e51c8
 Account                : Administrator

@@ -1,8 +1,8 @@
 ---
 title: Azure AD now supports Windows LAPS
 date: "2023-05-19T10:15:32.157Z"
-description: ""
-time: " min read"
+description: "You would not believe it! It happened. Azure AD can now back up and retrieve passwords from Windows LAPS. Bear in mind, that it is still in preview but man, I can’t wait ..."
+time: "6 min read"
 tags: ["Post", "AzureAD", "LAPS"]
 ogimage: "./00-laps-azuread.png"
 ---

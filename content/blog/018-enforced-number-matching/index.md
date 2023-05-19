@@ -1,7 +1,7 @@
 ---
 title: Microsoft now enforces number matching
 date: "2023-05-08T08:30:15.237Z"
-description: ""
+description: "It's finally the time. To prevent multi-factor authentication (MFA) fatigue attacks, Microsoft has begun as previously announced implementing number matching in Microsoft Authenticator push ..."
 time: "4 min read"
 tags: ["Post", "AzureAD", "MFA"]
 ogimage: "./00-microsoft-auth.jpeg"

@@ -30,15 +30,15 @@ This policy defines which authentication methods are the most secure and determi
     <tr><td>FIDO2 security key</td><td>✅</td><td>✅</td><td>✅</td></tr>
     <tr><td>Windows Hello for Business</td><td>✅</td><td>✅</td><td>✅</td></tr>
     <tr><td>Certificate-based authentication (Multi-Factor)</td><td>✅</td><td>✅</td><td>✅</td></tr>
-    <tr><td>Microsoft Authenticator (Phone Sign-in)</td><td>✅</td><td>✅</td></tr>
-    <tr><td>Temporary Access Pass (One-time use AND Multi-use)</td><td>✅</td></tr>
-    <tr><td>Password + something you have</td><td>✅</td></tr>
-    <tr><td>Federated single-factor + something you have</td><td>✅</td></tr>
-    <tr><td>Federated Multi-Factor</td><td>✅</td></tr>
-    <tr><td>Certificate-based authentication (single-factor)</td></tr>
-    <tr><td>SMS sign-in</td></tr>
-    <tr><td>Password</td></tr>
-    <tr><td>Federated single-factor</td></tr>
+    <tr><td>Microsoft Authenticator (Phone Sign-in)</td><td>✅</td><td>✅</td><td></td></tr>
+    <tr><td>Temporary Access Pass (One-time use AND Multi-use)</td><td>✅</td><td></td><td></td></tr>
+    <tr><td>Password + something you have</td><td>✅</td><td></td><td></td></tr>
+    <tr><td>Federated single-factor + something you have</td><td>✅</td><td></td><td></td></tr>
+    <tr><td>Federated Multi-Factor</td><td>✅</td><td></td><td></td></tr>
+    <tr><td>Certificate-based authentication (single-factor)</td><td></td><td></td><td></td></tr>
+    <tr><td>SMS sign-in</td><td></td><td></td><td></td></tr>
+    <tr><td>Password</td><td></td><td></td><td></td></tr>
+    <tr><td>Federated single-factor</td><td></td><td></td><td></td></tr>
 </tbody>
 </table>
 

@@ -3,7 +3,7 @@ title: Microsoft releases more logging data for free
 date: "2023-07-21T12:01:20.751Z"
 description: "Microsoft is giving access to additional logging data for Microsoft 365 customers worldwide at no additional cost, allowing easier detection of ..."
 time: "4 min read"
-tags: ["Post", "Announcement", "Audit", "Microsoft365"]
+tags: ["Announcement", "Audit", "Microsoft365"]
 ogimage: "./00-thumbnail.png"
 ---
 

@@ -3,7 +3,7 @@ title: Microsoft Exchange Online bug blocking outgoing emails
 date: "2023-07-19T11:15:32.156Z"
 description: "Microsoft is currently investigating an ongoing problem with Exchange Online that is causing disruptions for customers trying to send ..."
 time: "3 min read"
-tags: ["Post", "Bug", "Exchange Online", "Microsoft365"]
+tags: ["Post", "Bug", "ExchangeOnline", "Microsoft365"]
 ogimage: "./00-thumbnail.png"
 ---
 

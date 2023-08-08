@@ -3,7 +3,7 @@ title: "Upgrade to Azure Active Directory Connect V2"
 date: "2022-07-18T12:31:12.468Z"
 description: ""
 time: "9 min read"
-tags: ["Tutorial", "Hybrid", "Identity", "M365"]
+tags: ["Tutorial", "Hybrid", "Identity", "Microsoft365"]
 ogimage: "./03_version.jpg"
 ---
 

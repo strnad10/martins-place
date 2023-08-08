@@ -3,7 +3,7 @@ title: Sign up for ‘known issue’ email alerts
 date: "2023-05-03T09:00:10.124Z"
 description: "Microsoft has introduced a new feature that allows Windows administrators to receive email notifications when new issues are added to the Windows release health section of the Microsoft 365 ..."
 time: "3 min read"
-tags: ["Post", "Windows", "M365", "Alert"]
+tags: ["Post", "Windows", "Microsoft365", "Alert"]
 ogimage: "./00-windows-thumb.jpg"
 ---
 

@@ -3,7 +3,7 @@ title: "Enroll Android dedicated devices // Part 1"
 date: "2022-08-06T11:02:45.762Z"
 description: ""
 time: "8 min read"
-tags: ["Tutorial", "Intune", "AndroidEnterprise", "M365"]
+tags: ["Tutorial", "Intune", "AndroidEnterprise", "Microsoft365"]
 ogimage: "./002-enrollmentCreateProfile.jpg"
 ---
 

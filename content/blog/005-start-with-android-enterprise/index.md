@@ -3,7 +3,7 @@ title: "Start with Android Enterprise in Microsoft Intune"
 date: "2022-07-11T19:43:58.534Z"
 description: ""
 time: "4 min read"
-tags: ["Tutorial", "Intune", "AndroidEnterprise", "M365"]
+tags: ["Tutorial", "Intune", "AndroidEnterprise", "Microsoft365"]
 ogimage: "./managementModels.jpg"
 ---
 

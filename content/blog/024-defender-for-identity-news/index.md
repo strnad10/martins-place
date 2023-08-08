@@ -1,7 +1,7 @@
 ---
 title: News in Defender for Identity land!
 date: "2023-08-08T16:20:12.249Z"
-description: ""
+description: "Microsoft Defender for Identity assists Active Directory administrators in protecting their Active Directory Domain Services infrastructures from ..."
 time: "6 min read"
 tags: ["Announcement", "Microsoft365", "DefenderForIdentity"]
 ogimage: "./00-thumbnail.png"

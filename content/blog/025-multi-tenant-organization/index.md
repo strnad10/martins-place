@@ -1,7 +1,7 @@
 ---
 title: Exploring Multi-Tenant Organization
 date: "2023-08-30T08:15:25.571Z"
-description: ""
+description: "Microsoft finally listened to the wishes of the community and introduced the Multi-tenant organization feature in the preview. It is a feature that allows ..."
 time: "8 min read"
 tags: ["Announcement", "Microsoft365", "Tenancy"]
 ogimage: "./00-thumbnail.png"

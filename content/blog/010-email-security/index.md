@@ -127,19 +127,60 @@ v=DMARC1; p=reject; rua=mailto:rua@domain.com; ruf=mailto:ruf@domain.com; pct=10
 ```
 The table below should be plenty to explain, what each parameter does. If you need any help with creating a DMARC record, do let me know. 😊
 
-| Tag | Description |
-|---|---|
-| Version (v) | The v tag is required and represents the protocol version. An example is v=DMARC1 |
-| Policy (p) | The required p tag demonstrates the policy for domain (or requested handling policy). It directs the receiver to report, quarantine, or reject emails that fail authentication checks. Policy options are None, Quarantine or Reject. |
-| Percentage (pct) | This DMARC tag specifies the percentage of email messages subjected to filtering. For example, pct=25 means a quarter of your company’s emails will be filtered by the recipient. |
-| RUA Report Email Address(s) (rua): | This optional tag is designed for reporting URI(s) for aggregate data. An rua example is rua=mailto:rua@domain.com. |
-| RUF Report Email Address(s) (ruf): | Like the rua tag, the ruf designation is an optional tag. It directs addresses to which message-specific forensic information is to be reported (i.e., comma-separated plain-text list of URIs). An ruf example is ruf=mailto:ruf@domain.com. |
-| Forensic Reporting Options (fo): | The FO tag pertains to how forensic reports are created and presented to DMARC users. |
-| ASPF Tag (aspf): | The aspf tag represents alignment mode for SPF. An optional tag, aspf=r is a common example of its configuration. |
-| ADKIM Tag (adkim): | Similar to aspf, the optional adkim tag is the alignment mode for the DKIM protocol. A sample tag is adkim=r. |
-| Report Format (rf): | Forensic reporting format(s) is declared by the DMARC rf tag. |
-| Report Interval (ri): | The ri tag corresponds to the aggregate reporting interval and provides DMARC feedback for the outlined criteria. |
-| Subdomain Policy (sp): | This tag represents the requested handling policy for subdomains. |
+<table>
+  <thead>
+    <tr>
+        <td>Tag</td>
+        <td>Description</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td>Version (v)</td>
+        <td>The v tag is required and represents the protocol version. An example is v=DMARC1</td>
+    </tr>
+    <tr>
+        <td>Policy (p)</td>
+        <td>The required p tag demonstrates the policy for domain (or requested handling policy). It directs the receiver to report, quarantine, or reject emails that fail authentication checks. Policy options are None, Quarantine or Reject.</td>
+    </tr>
+    <tr>
+        <td>Percentage (pct)</td>
+        <td>This DMARC tag specifies the percentage of email messages subjected to filtering. For example, pct=25 means a quarter of your company’s emails will be filtered by the recipient.</td>
+    </tr>
+    <tr>
+        <td>RUA Report Email Address(s) (rua):</td>
+        <td>This optional tag is designed for reporting URI(s) for aggregate data. An rua example is rua=mailto:rua@domain.com.</td>
+    </tr>
+    <tr>
+        <td>RUF Report Email Address(s) (ruf):</td>
+        <td>Like the rua tag, the ruf designation is an optional tag. It directs addresses to which message-specific forensic information is to be reported (i.e., comma-separated plain-text list of URIs). An ruf example is ruf=mailto:ruf@domain.com.</td>
+    </tr>
+    <tr>
+        <td>Forensic Reporting Options (fo):</td>
+        <td>The FO tag pertains to how forensic reports are created and presented to DMARC users.</td>
+    </tr>
+    <tr>
+        <td>ASPF Tag (aspf):</td>
+        <td>The aspf tag represents alignment mode for SPF. An optional tag, aspf=r is a common example of its configuration.</td>
+    </tr>
+    <tr>
+        <td>ADKIM Tag (adkim):</td>
+        <td>Similar to aspf, the optional adkim tag is the alignment mode for the DKIM protocol. A sample tag is adkim=r.</td>
+    </tr>
+    <tr>
+        <td>Report Format (rf):</td>
+        <td>Forensic reporting format(s) is declared by the DMARC rf tag.</td>
+    </tr>
+    <tr>
+        <td>Report Interval (ri):</td>
+        <td>The ri tag corresponds to the aggregate reporting interval and provides DMARC feedback for the outlined criteria.</td>
+    </tr>
+    <tr>
+        <td>Subdomain Policy (sp):</td>
+        <td>This tag represents the requested handling policy for subdomains.</td>
+    </tr>
+  </tbody>
+</table>
 
 The image below shows you, how is the email processed when validating SPF, DKIM, and DMARC.
 

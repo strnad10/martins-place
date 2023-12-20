@@ -38,9 +38,9 @@ module.exports = {
         icon: `/navigation/linkedin.svg`
       },
       {
-        name: `twitter`,
+        name: `x`,
         link: `https://twitter.com/strnad10`,
-        icon: `/navigation/twitter.svg`
+        icon: `/navigation/x.svg`
       },
       {
         name: `github`,

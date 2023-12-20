@@ -16,11 +16,11 @@ const ShareButtons = ({ url, title, description }) => (
           className="postShareIcon"
           layout="fixed"
           formats={["auto", "webp", "avif"]}
-          src="../images/shareButtons/Twitter.svg"
+          src="../images/shareButtons/x.svg"
           width={30}
           height={30}
           quality={100}
-          alt="Twitter"
+          alt="Platform X"
         />
       </TwitterShareButton>
 
